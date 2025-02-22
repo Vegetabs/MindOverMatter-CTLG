@@ -716,7 +716,7 @@
     },
     "effect": [
       { "u_message": "As you unleash your powers, you feel tired.", "type": "bad" },
-      { "math": [ "u_val('sleepiness')", "+=", "rng(30,90)" ] }
+      { "math": [ "u_val('fatigue')", "+=", "rng(30,90)" ] }
     ]
   },
   {
