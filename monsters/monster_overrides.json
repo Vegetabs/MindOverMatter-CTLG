@@ -90,27 +90,6 @@
     "regeneration_modifiers": [ [ "effect_vitakin_hurt", -25 ] ]
   },
   {
-    "id": "mon_strange_megafrog",
-    "copy-from": "mon_strange_megafrog",
-    "type": "MONSTER",
-    "regeneration_modifiers": [ [ "effect_vitakin_hurt", -2 ] ],
-    "extend": { "flags": [ "CANPLAY", "PET_MOUNTABLE" ] }
-  },
-  {
-    "id": "mon_odd_megafrog",
-    "copy-from": "mon_odd_megafrog",
-    "type": "MONSTER",
-    "regeneration_modifiers": [ [ "effect_vitakin_hurt", -2 ] ],
-    "extend": { "flags": [ "CANPLAY", "PET_MOUNTABLE" ] }
-  },
-  {
-    "id": "mon_foul_megafrog",
-    "copy-from": "mon_foul_megafrog",
-    "type": "MONSTER",
-    "regeneration_modifiers": [ [ "effect_vitakin_hurt", -1 ] ],
-    "extend": { "flags": [ "CANPLAY", "PET_MOUNTABLE" ] }
-  },
-  {
     "id": "mon_pigeon",
     "copy-from": "mon_pigeon",
     "type": "MONSTER",
@@ -456,12 +435,6 @@
     "extend": { "flags": [ "TEEP_IMMUNE" ] }
   },
   {
-    "id": "mon_archunk_weak",
-    "copy-from": "mon_archunk_weak",
-    "type": "MONSTER",
-    "extend": { "flags": [ "TEEP_IMMUNE" ] }
-  },
-  {
     "id": "mon_hanging_roper",
     "copy-from": "mon_hanging_roper",
     "type": "MONSTER",
@@ -490,12 +463,6 @@
     "copy-from": "mon_nether_fish",
     "type": "MONSTER",
     "extend": { "flags": [ "TEEP_IMMUNE" ] }
-  },
-  {
-    "id": "mon_teke_mouse",
-    "copy-from": "mon_teke_mouse",
-    "type": "MONSTER",
-    "armor": { "bash": 15, "cut": 3, "bullet": 26, "psi_telekinetic_damage": 25 }
   },
   {
     "id": "mon_fungaloid_tower",
