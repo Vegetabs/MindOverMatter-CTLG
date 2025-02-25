@@ -244,5 +244,13 @@
     "name": "GROUP_EGG_COCKATRICE",
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_cockatrice_chick", "weight": 5 }, { "monster": "mon_chicken_chick", "weight": 1 } ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOUGAR_UPGRADE",
+    "monsters": [
+      { "monster": "mon_zougar_hunter", "weight": 600, "cost_multiplier": 4 },
+      { "monster": "mon_zougar_shady", "weight": 400, "cost_multiplier": 6 }
+    ]
   }
 ]

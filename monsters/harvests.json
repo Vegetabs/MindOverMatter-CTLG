@@ -19,5 +19,11 @@
       { "drop": "raw_leather", "type": "skin", "mass_ratio": 0.02 },
       { "drop": "mutant_fat", "type": "flesh", "mass_ratio": 0.07 }
     ]
+  },
+  {
+    "id": "cougar_with_skull",
+    "type": "harvest",
+    "copy-from": "mammal_fur",
+    "entries": [ { "drop": "skull_cougar", "type": "bone", "scale_num": [ 1, 1 ], "max": 1 } ] 
   }
 ]

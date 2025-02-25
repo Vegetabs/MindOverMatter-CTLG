@@ -64,5 +64,22 @@
     "description": "Your body, lying on the ground while your spirit walks free.  Hopefully nothing happens to it while you're gone.",
     "looks_like": "corpse_generic_human",
     "material": [ "hflesh" ]
+  },
+  {
+    "id": "skull_cougar",
+    "type": "GENERIC",
+    "name": { "str": "cougar skull" },
+    "description": "The skull of a cougar.",
+    "flags": [ "TRADER_AVOID" ],
+    "category": "other",
+    "weight": "450 g",
+    "volume": "3 L",
+    "symbol": "@",
+    "color": "white",
+    "price": "0 cent",
+    "price_postapoc": "10 cent",
+    "material": [ "bone" ],
+    "copy-from": "skull_abstract",
+    "longest_side": "21 cm"
   }
 ]
