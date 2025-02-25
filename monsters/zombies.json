@@ -9,7 +9,7 @@
   },
   {
     "id": "mon_zombie_blank",
-    "copy-from": "mon_zombie_base",
+    "copy-from": "mon_zombie",
     "type": "MONSTER",
     "name": { "str": "zombie blank" },
     "description": "This zombie looks fairly ordinary, other than walking slightly more quickly than the standard shambling.  But there's something subtly wrong about it.  When you look directly at it, gray static flickers on the edge of your vision and you hear a very low droning hum.",
@@ -39,7 +39,7 @@
   },
   {
     "id": "mon_zombie_nullpsi",
-    "copy-from": "mon_zombie_base",
+    "copy-from": "mon_zombie",
     "type": "MONSTER",
     "name": { "str": "zombie null" },
     "description": "This zombie's limbs are elongated and its torso is stretched, causing it to occasionally drop on all fours to skitter faster than a normal walk.  When you look directly at it, gray static flickers on the edge of your vision and you hear a very low droning hum.",
@@ -106,7 +106,7 @@
   },
   {
     "id": "mon_zombie_concentration_ender",
-    "copy-from": "mon_zombie_base",
+    "copy-from": "mon_zombie",
     "type": "MONSTER",
     "name": { "str": "zombie breaker" },
     "description": "An enormous hump takes up most of this zombie's back, fusing its head directly into its torso.  It moves slowly but seems more aware than most of its kind, constantly looking around rather than staring blankly ahead.  When you look directly at it, you feel a cold chill at the base of your skull.",
@@ -159,7 +159,7 @@
   },
   {
     "id": "mon_zombie_psi_void",
-    "copy-from": "mon_zombie_base",
+    "copy-from": "mon_zombie",
     "type": "MONSTER",
     "name": { "str": "nether-void" },
     "description": "Thoughts of old creepy Internet memes arise unbidden as you see this zombie.  It's almost ten feet fall but incredibly thin, with spindly legs and with arms that hang down almost all the way to the ground.  Occasionally, it drops on all fours to clamber with uncanny speed over some bit of rubble.  When you look directly at it, gray static flickers on the edge of your vision and you hear a very low droning hum.",

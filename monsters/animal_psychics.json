@@ -33,8 +33,74 @@
     "reproduction": { "baby_monster": "mon_cougar_kitten", "baby_count": 6, "baby_timer": 92 },
     "//": "Cougars can breed all year, but mainly do so between January and August, they can have between 1 to 6 kittens at a time.",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE" ],
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN", "KEENNOSE" ],
     "armor": { "bash": 1 }
+  },
+  {
+    "id": "mon_zougar",
+    "type": "MONSTER",
+    "name": { "str": "decayed pouncer" },
+    "description": "A normal-looking cougar, except that its hind legs are swollen, and its eyes bulge with black goo.",
+    "default_faction": "zombie",
+    "bodytype": "dog",
+    "species": [ "ZOMBIE" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 65,
+    "speed": 126,
+    "attack_cost": 126,
+    "material": [ "flesh" ],
+    "symbol": "C",
+    "color": "green",
+    "scents_tracked": [ "sc_human", "sc_fetid" ],
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
+    "dodge": 2,
+    "families": [ "prof_gross_anatomy", "prof_intro_biology", "prof_physiology", "prof_wp_zombie" ],
+    "vision_day": 30,
+    "vision_night": 10,
+    "harvest": "zombie_fur",
+    "decay": "zombie_decay_bone",
+    "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 5 } ],
+    "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
+    "upgrades": { "half_life": 42, "into_group": "GROUP_ZOUGAR_UPGRADE" },
+    "fungalize_into": "mon_zougar_fungus",
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "KEENNOSE",
+      "GOODHEARING",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "FILTHY"
+    ],
+    "armor": { "bash": 1, "electric": 1 }
+  },
+  {
+    "id": "mon_zougar_fungus",
+    "type": "MONSTER",
+    "name": { "str": "fungal pouncer" },
+    "description": "This four legged, oversized cat seems to spew spores from its pawpads with each clumsy landing, as if constantly gaining and losing balance in air.",
+    "copy-from": "mon_zougar",
+    "default_faction": "fungus",
+    "color": "light_gray",
+    "bleed_rate": 0,
+    "vision_day": 5,
+    "vision_night": 5,
+    "harvest": "zombie_animal_mushroom",
+    "upgrades": false,
+    "proportional": { "hp": 0.75, "speed": 0.55 },
+    "relative": { "melee_skill": -1, "melee_dice": -1, "melee_dice_sides": 3, "armor": { "bash": 2, "electric": 4 } },
+    "extend": { "species": [ "FUNGUS" ], "flags": [ "NO_FUNG_DMG" ], "special_attacks": [ [ "FUNGUS", 200 ] ] }
   },
   {
     "id": "mon_cougar_kitten",
@@ -87,18 +153,8 @@
             ]
           },
           "monster_message": ""
-        },
-        {
-          "id": "psi_hidebehind_apply_mindsight",
-          "type": "spell",
-          "spell_data": { "id": "hidebehind_apply_mindsight", "hit_self": true },
-          "cooldown": 1,
-          "allow_no_target": true,
-          "condition": { "and": [ { "not": { "u_has_flag": "NO_PSIONICS" } }, { "not": { "u_has_effect": "eff_mind_seeing_bonus_20" } } ] },
-          "monster_message": ""
         }
-      ],
-      "flags": [ "MIND_SEEING" ]
+      ]
     }
   },
   {
