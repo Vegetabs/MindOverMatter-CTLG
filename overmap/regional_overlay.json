@@ -117,9 +117,7 @@
           "mx_nether_pond": 50,
           "mx_portal_in": 30,
           "mx_point_burned_ground": 100,
-          "mx_casings": 30,
-          "mx_exocrash_1": 1,
-          "mx_exocrash_2": 1
+          "mx_casings": 30
         }
       },
       "phavian_lab_interior": {
