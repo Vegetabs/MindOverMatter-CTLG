@@ -49,5 +49,80 @@
       "NOGIB",
       "TEEP_IMMUNE"
     ]
+  },
+  {
+    "id": "mon_swarm_structure",
+    "type": "MONSTER",
+    "name": { "str": "swarm structure" },
+    "description": "Your mind can't decide if this is a vast structure, or an endless swarm of tiny flying sharp things.  The only thing you know for sure is that it is far too large to fit in the space it occupies.",
+    "default_faction": "nether_player_hate",
+    "species": [ "NETHER_EMANATION" ],
+    "volume": "62500 ml",
+    "weight": "0 g",
+    "hp": 80,
+    "speed": 80,
+    "symbol": "S",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_swarm_structure_attack",
+          "min_level": 1
+        },
+        "cooldown": 6,
+        "monster_message": "The integrity of spacetime is violated."
+      }
+    ],
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "Your memory can't decide whether the %s was even there in the first place." },
+    "flags": [
+      "IMMOBILE",
+      "NO_BREATHE",
+      "BIOLOGICALPROOF",
+      "SEES",
+      "HEARS",
+      "RANGED_ATTACKER"
+    ],
+    "armor": { "bash": 5, "cut": 5, "bullet": 5 }
+  },
+  {
+    "id": "mon_twisting_blade",
+    "type": "MONSTER",
+    "name": { "str": "twisting blade" },
+    "description": "You are uncertain whether this dwarfs you or you dwarf it.  Its exact shape and number of dimensions is constantly changing, but it is always sharp enough to cut a moment in half.",
+    "default_faction": "nether_player_hate",
+    "species": [ "NETHER_EMANATION" ],
+    "volume": "62500 ml",
+    "weight": "0 g",
+    "hp": 30,
+    "speed": 60,
+    "symbol": "B",
+    "color": "dark_gray",
+    "aggression": 100,
+    "morale": 100,
+    "dodge": 8,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": {
+          "id": "mon_twisting_blade_attack",
+          "min_level": 1
+        },
+        "cooldown": 1,
+        "monster_message": "You are cut in ways worse than physical."
+      }
+    ],
+    "death_function": { "corpse_type": "NO_CORPSE", "message": "Your memory can't decide whether the %s was even there in the first place."
+    },
+    "flags": [
+      "FLIES",
+      "NO_BREATHE",
+      "BIOLOGICALPROOF",
+      "SEES",
+      "HEARS",
+      "RANGED_ATTACKER"
+    ]
   }
 ]

@@ -104,7 +104,7 @@
   {
     "name": "GROUP_CRYSTAL_FIELD_PSYCHOACTIVE",
     "type": "monstergroup",
-    "monsters": [ { "monster": "mon_shifting_mass", "weight": 60, "cost_multiplier": 2 } ]
+    "monsters": [ { "monster": "mon_swarm_structure", "weight": 60, "cost_multiplier": 2 } ]
   },
   {
     "type": "monstergroup",
