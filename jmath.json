@@ -3,7 +3,7 @@
     "type": "jmath_function",
     "id": "int_to_level",
     "num_args": 1,
-    "return": "(u_intelligence * 1.5) * (_0)"
+    "return": "(u_val('intelligence') * 1.5) * (_0)"
   },
   {
     "type": "jmath_function",
@@ -15,13 +15,13 @@
     "type": "jmath_function",
     "id": "psionic_power_experience_formula_channeling",
     "num_args": 0,
-    "return": "(u_focus_effective / 100 ) * 80 * ( ( u_intelligence + 10) / 20 ) * min( ( 0.5 + ( u_metaphysics / 20) ), 1) * u_nether_attunement_power_scaling"
+    "return": "(u_val('focus') / 100 ) * 80 * ( ( u_val('intelligence') + 10) / 20 ) * min( ( 0.5 + ( u_skill('metaphysics') / 20) ), 1) * u_nether_attunement_power_scaling"
   },
   {
     "type": "jmath_function",
     "id": "psionic_power_experience_formula",
     "num_args": 0,
-    "return": "(u_focus_effective / 100) * 80 * ( ( u_intelligence + 10) / 20 ) * min( ( 0.5 + ( u_metaphysics / 20) ), 1) * u_nether_attunement_power_scaling"
+    "return": "(u_val('focus') / 100) * 80 * ( ( u_val('intelligence') + 10) / 20 ) * min( ( 0.5 + ( u_skill('metaphysics') / 20) ), 1) * u_nether_attunement_power_scaling"
   },
   {
     "type": "jmath_function",
@@ -33,25 +33,19 @@
     "type": "jmath_function",
     "id": "psionics_kcal_cost",
     "num_args": 1,
-    "return": "( (5 * _0) * rng( 0.3, 1.7) )"
+    "return": "(4 * _0) * rng( 0.3, 1.7) * u_nether_attunement_power_scaling * (u_effect_intensity('effect_nether_attunement_extra_kcal') > 0 ? 3 : 1)"
   },
   {
     "type": "jmath_function",
     "id": "psionics_contemplation_kcal_cost",
     "num_args": 1,
-    "return": "( (25 * _0) * rng( 0.3, 1.7) )"
+    "return": "(1.2 * _0) * rng( 0.3, 1.7) * u_nether_attunement_power_scaling * (u_effect_intensity('effect_nether_attunement_extra_kcal') > 0 ? 3 : 1)"
   },
   {
     "type": "jmath_function",
     "id": "matrix_awakening_odds",
     "num_args": 1,
     "return": "(100 - (100 * (e ^ (_0 / -1.7) ) ) )"
-  },
-  {
-    "type": "jmath_function",
-    "id": "portal_storm_awakening_odds",
-    "num_args": 1,
-    "return": "(100 - (100 * (e ^ (_0 / -3) ) ) )"
   },
   {
     "type": "jmath_function",
@@ -63,7 +57,8 @@
     "type": "jmath_function",
     "id": "contemplation_factor",
     "num_args": 1,
-    "return": "(u_focus * 18) * (_0)"
+    "//": "This equates to about 400 XP per hour of contemplation when at minimum focus, modified by Nether Attunement",
+    "return": "(u_val('focus') * 0.004) * (_0) * u_nether_attunement_power_scaling"
   },
   {
     "type": "jmath_function",
@@ -82,66 +77,66 @@
     "id": "jmath_psi_learning_counter_time_low",
     "num_args": 1,
     "//": "Reduces time between insight moments by 3% per point of Intelligence above 10 (increase by 3% per point below 10), to a max of 60% faster from intelligence, and by 5% per point of Metaphysics skill above 5.",
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * clamp(( 1 - (((u_metaphysics - 4) + 20 ) / 21) + 1),0.75,1)"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * clamp(( 1 - (((u_skill('metaphysics') - 4) + 20 ) / 21) + 1),0.75,1)"
   },
   {
     "type": "jmath_function",
     "id": "jmath_psi_learning_counter_time_high",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * clamp(( 1 - (((u_metaphysics - 4) + 20 ) / 21) + 1),0.75,1)"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * clamp(( 1 - (((u_skill('metaphysics') - 4) + 20 ) / 21) + 1),0.75,1)"
   },
   {
     "type": "jmath_function",
     "id": "jmath_biokinesis_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_biokinesis')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_biokinesis')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_clairsentience_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_clairsentience')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_clairsentience')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_electrokinesis_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_electrokinesis')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_electrokinesis')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_photokinesis_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_photokinesis')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_photokinesis')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_pyrokinesis_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_pyrokinesis')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_pyrokinesis')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_telekinesis_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_telekinesis')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_telekinesis')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_telepathy_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_telepathy')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_telepathy')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_teleportation_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_teleportation')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_teleportation')))"
   },
   {
     "type": "jmath_function",
     "id": "jmath_vitakinesis_learning_eocs_modifiers",
     "num_args": 1,
-    "return": "_0 * max(( 1 - ( ( ( u_intelligence + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_vitakinesis')))"
+    "return": "_0 * max(( 1 - ( ( ( u_val('intelligence') + 23.33) / 33.33 ) ) + 1 ),0.4) * (1 - (0.2 * u_has_proficiency('prof_contemplation_vitakinesis')))"
   }
 ]
