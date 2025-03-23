@@ -621,8 +621,9 @@
     "type": "effect_on_condition",
     "id": "EOC_BIOKIN_GUIDED_EVOLUTION_DRAIN",
     "condition": { "u_has_effect": "effect_biokin_guided_evolution" },
+    "//": "TEMP fix till u_spell_difficulty() gets backported",
     "effect": [
-      { "math": [ "u_latest_channeled_power_difficulty", "=", "u_spell_difficulty('biokin_guided_evolution')" ] },
+      { "math": [ "u_latest_channeled_power_difficulty", "=", "8" ] },
       { "run_eocs": [ "EOC_PSIONICS_GAIN_NETHER_ATTUNEMENT_2", "EOC_PSI_MAINTENANCE_CALORIE_COST_CALCULATOR" ] },
       { "math": [ "u_spell_exp('biokin_guided_evolution')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
