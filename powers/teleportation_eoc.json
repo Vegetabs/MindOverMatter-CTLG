@@ -922,14 +922,14 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_TELEPORT_EXTERNAL_TELEPORT",
+    "//": "No force_safe option so the teleport will fail if the gate is blocked (needs to be tested for how it affects).",
     "effect": [
       {
         "set_string_var": "<npc_val:dilated_gateway_location>",
         "target_var": { "context_val": "temp_var" },
         "parse_tags": true
       },
-      { "u_teleport": { "var_val": "temp_var" }, "force_safe": true },
-      { "message": "<u_name> vanishes!" }
+      { "u_teleport": { "var_val": "temp_var" }, "success_message": "<u_name> vanishes!", "fail_message": "<u_name> appears to distort slightly before stabilising." }
     ]
   },
   {
@@ -998,7 +998,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [ { "wielded_only": true, "condition": { "math": [ "n_volume() > 0" ] } } ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [ "EOC_TELEPORT_RELOCATION_SELECTOR" ],
         "false_eocs": [
           {
