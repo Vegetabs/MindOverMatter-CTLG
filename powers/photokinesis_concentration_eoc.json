@@ -4,6 +4,7 @@
     "id": "EOC_PHOTOKIN_LIGHT_LOCAL_INITIATE",
     "condition": { "not": { "u_has_effect": "effect_photokin_light_local" } },
     "effect": [
+      { "u_message": "A soft glow springs up around you.", "type": "good" },
       { "u_add_effect": "effect_photokin_light_local", "duration": "PERMANENT" },
       { "run_eocs": "EOC_POWER_MAINTENANCE_PLUS_ONE" },
       {
