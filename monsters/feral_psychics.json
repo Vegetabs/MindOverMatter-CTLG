@@ -53,7 +53,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS"
     ]
@@ -123,7 +123,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "STUN_IMMUNE"
@@ -204,7 +204,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "NO_BREATHE",
@@ -255,7 +255,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "GOODHEARING",
@@ -324,7 +324,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "DROPS_AMMO",
@@ -403,7 +403,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "DROPS_AMMO",
@@ -468,7 +468,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS"
     ]
   },
@@ -544,7 +544,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "ELECTRIC"
     ]
@@ -630,7 +630,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "ELECTRIC_FIELD"
     ]
@@ -697,7 +697,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS"
     ]
   },
@@ -781,7 +781,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "PHOTOKIN_MONSTER_IMMUNE"
     ]
@@ -871,7 +871,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "PHOTOKIN_MONSTER_IMMUNE"
     ]
@@ -949,7 +949,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "FIREPROOF"
     ]
@@ -1040,7 +1040,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "FIREY"
     ]
@@ -1136,7 +1136,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PRIORITIZE_TARGETS",
       "FIREY"
     ]
@@ -1246,7 +1246,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "PUSH_VEH",
@@ -1369,7 +1369,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "FLIES",
@@ -1444,7 +1444,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS"
     ]
@@ -1522,7 +1522,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "TEEP_IMMUNE"
@@ -1610,7 +1610,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "TEEP_IMMUNE"
@@ -1676,7 +1676,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
@@ -1760,7 +1760,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
@@ -1858,7 +1858,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
@@ -1935,7 +1935,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "NO_FUNG_DMG"
@@ -2038,7 +2038,7 @@
       "GROUP_BASH",
       "HUMAN",
       "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER_1",
+      "PATH_AVOID_DANGER",
       "PATH_AVOID_FIRE",
       "PRIORITIZE_TARGETS",
       "NO_FUNG_DMG"

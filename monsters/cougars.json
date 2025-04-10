@@ -33,7 +33,7 @@
     "reproduction": { "baby_monster": "mon_cougar_kitten", "baby_count": 6, "baby_timer": 92 },
     "//": "Cougars can breed all year, but mainly do so between January and August, they can have between 1 to 6 kittens at a time.",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN", "KEENNOSE" ],
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE" ],
     "armor": { "bash": 1 }
   },
   {
