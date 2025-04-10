@@ -1039,25 +1039,12 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_TELEPORT_RELOCATION_SELECT_01",
+    "//": "Removed search_data conditions and volume checks as TLG can't do that in all relocation_selects",
     "condition": { "math": [ "has_var(u_gateway_destination_1)" ] },
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_01",
@@ -1087,21 +1074,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_02",
@@ -1131,21 +1104,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_03",
@@ -1175,21 +1134,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_04",
@@ -1219,21 +1164,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_05",
@@ -1263,21 +1194,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_06",
@@ -1307,21 +1224,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_07",
@@ -1351,21 +1254,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_08",
@@ -1395,21 +1284,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_09",
@@ -1439,21 +1314,7 @@
     "effect": [
       {
         "u_run_inv_eocs": "all",
-        "search_data": [
-          {
-            "wielded_only": true,
-            "condition": {
-              "and": [
-                {
-                  "math": [
-                    "n_volume() <= ((u_spell_level('teleport_relocation') * 10000) + 10000) * scaling_factor(u_val('intelligence')) * u_nether_attunement_power_scaling"
-                  ]
-                },
-                { "math": [ "n_volume() > 0" ] }
-              ]
-            }
-          }
-        ],
+        "search_data": [ { "wielded_only": true } ],
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_RELOCATION_TELEPORT_10",
