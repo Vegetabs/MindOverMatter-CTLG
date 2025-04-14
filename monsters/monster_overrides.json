@@ -339,12 +339,6 @@
     "extend": { "flags": [ "TEEP_IMMUNE" ] }
   },
   {
-    "id": "mon_breather",
-    "copy-from": "mon_breather",
-    "type": "MONSTER",
-    "extend": { "flags": [ "TEEP_IMMUNE" ] }
-  },
-  {
     "id": "mon_shrapnel_swarm",
     "copy-from": "mon_shrapnel_swarm",
     "type": "MONSTER",
