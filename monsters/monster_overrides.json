@@ -695,15 +695,15 @@
         {
           "id": "zed_master_telekin_blast",
           "type": "spell",
-          "spell_data": { "id": "telepathic_blast_monster" },
-          "cooldown": 60,
+          "spell_data": { "id": "telepathic_blast_monster", "min_level": 1 },
+          "cooldown": 40,
           "monster_message": "%1$s looks at %3$s and assaults your mind."
         },
         {
           "id": "zed_master_telekin_blind",
           "type": "spell",
-          "spell_data": { "id": "telepathic_confusion_monster" },
-          "cooldown": 60,
+          "spell_data": { "id": "telepathic_confusion_monster", "min_level": 1 },
+          "cooldown": 30,
           "monster_message": "%1$s looks at %3$s and your senses blink out."
         }
       ]
@@ -718,7 +718,7 @@
         {
           "id": "necromancer_vitakin_attack_touch",
           "type": "spell",
-          "spell_data": { "id": "vitakinetic_attack_touch_monster" },
+          "spell_data": { "id": "vitakinetic_attack_touch_monster", "min_level": 1 },
           "cooldown": 20,
           "monster_message": "%1$s reaches out and touches %3$s rapidly breaking apart your body."
         }
