@@ -697,14 +697,14 @@
           "type": "spell",
           "spell_data": { "id": "telepathic_blast_monster" },
           "cooldown": 60,
-          "monster_message": "%3$s feels their mind break down as %1$s looks at them."
+          "monster_message": "%1$s looks at %3$s and assaults your mind."
         },
         {
           "id": "zed_master_telekin_blind",
           "type": "spell",
           "spell_data": { "id": "telepathic_confusion_monster" },
           "cooldown": 60,
-          "monster_message": "%3$s is stunned as %1$s assaults their mind."
+          "monster_message": "%1$s looks at %3$s and your senses blink out."
         }
       ]
     }
@@ -720,7 +720,7 @@
           "type": "spell",
           "spell_data": { "id": "vitakinetic_attack_touch_monster" },
           "cooldown": 20,
-          "monster_message": "%1$s reaches out and touches %3$s breaking apart their body."
+          "monster_message": "%1$s reaches out and touches %3$s rapidly breaking apart your body."
         }
       ]
     }
