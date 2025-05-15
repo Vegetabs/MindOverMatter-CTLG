@@ -686,7 +686,7 @@
     "type": "MONSTER",
     "species": [ "ROBOT", "YRAX_CONSTRUCT" ]
   },
-    {
+  {
     "id": "mon_zombie_master",
     "copy-from": "mon_zombie_master",
     "type": "MONSTER",
@@ -705,6 +705,22 @@
           "spell_data": { "id": "telepathic_confusion_monster" },
           "cooldown": 60,
           "monster_message": "%3$s is stunned as %1$s assaults their mind."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_necro",
+    "copy-from": "mon_zombie_necro",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        {
+          "id": "necromancer_vitakin_attack_touch",
+          "type": "spell",
+          "spell_data": { "id": "vitakinetic_attack_touch_monster" },
+          "cooldown": 20,
+          "monster_message": "%1$s reaches out and touches %3$s breaking apart their body."
         }
       ]
     }
