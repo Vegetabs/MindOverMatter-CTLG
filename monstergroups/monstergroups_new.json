@@ -142,7 +142,6 @@
       { "monster": "mon_skitterbot", "weight": 85, "pack_size": [ 2, 3 ] },
       { "monster": "mon_skitterbot", "weight": 10, "pack_size": [ 8, 12 ] },
       { "monster": "mon_blob_small", "weight": 10, "pack_size": [ 1, 4 ] },
-      { "monster": "mon_zombie_armored", "weight": 5, "cost_multiplier": 5 },
       { "monster": "mon_zombie_brute_shocker", "weight": 5, "cost_multiplier": 5 },
       { "monster": "mon_lab_rat", "weight": 50, "cost_multiplier": 20, "pack_size": [ 4, 8 ] }
     ]
