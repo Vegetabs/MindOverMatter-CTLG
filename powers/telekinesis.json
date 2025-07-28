@@ -568,6 +568,8 @@
         "( (u_spell_level('telekinetic_hammer') * 3.5) + 55) * (scaling_factor(u_val('intelligence') ) ) * u_nether_attunement_power_scaling"
       ]
     },
+    "min_bash_scaling": 1,
+    "max_bash_scaling": 1,
     "min_range": {
       "math": [
         "min( (( (u_spell_level('telekinetic_hammer') * 0.9) + 3) * (scaling_factor(u_val('intelligence') ) ) * u_nether_attunement_power_scaling), 70)"
@@ -698,6 +700,8 @@
         "( (u_spell_level('telekinetic_explosion') * 7.5) + 99) * (scaling_factor(u_val('intelligence') ) ) * u_nether_attunement_power_scaling"
       ]
     },
+    "min_bash_scaling": 1,
+    "max_bash_scaling": 1,
     "min_range": {
       "math": [
         "min( (( (u_spell_level('telekinetic_explosion') * 0.9) + 4) * (scaling_factor(u_val('intelligence') ) ) * u_nether_attunement_power_scaling), 60)"

@@ -94,7 +94,7 @@
             "or": [
               { "npc_need": "thirst", "amount": 80 },
               { "npc_need": "hunger", "amount": 160 },
-              { "npc_need": "sleepiness", "level": "TIRED" },
+              { "npc_need": "fatigue", "level": "TIRED" },
               "u_driving",
               "npc_driving",
               { "npc_has_effect": "asked_to_vitakinetic_heal" }

@@ -958,5 +958,27 @@
     "shape": "blast",
     "min_duration": 200,
     "max_duration": 600
+  },
+  {
+    "id": "vitakinetic_attack_touch_monster",
+    "type": "SPELL",
+    "name": "[Ψ]Lacerating Touch Monster",
+    "description": "Damages target with biological dmg. It's a bug if you have it.",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "PSIONIC", "CONCENTRATE", "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_EXPLOSION_SFX" ],
+    "effect": "attack",
+    "shape": "blast",
+    "damage_type": "biological",
+    "difficulty": 1,
+    "max_level": 20,
+    "min_range": 1,
+    "min_damage": 10,
+    "max_damage": 20,
+    "min_dot": 1,
+    "max_dot": 1,
+    "min_duration": 400,
+    "max_duration": 800,
+    "base_casting_time": 50,
+    "ignored_monster_species": [ "PSI_NULL" ]
   }
 ]

@@ -266,13 +266,6 @@
     "extend": { "flags": [ "CANPLAY" ] }
   },
   {
-    "id": "mon_goose_canadian",
-    "type": "MONSTER",
-    "copy-from": "mon_goose_canadian",
-    "name": { "str": "goose", "str_pl": "geese" },
-    "extend": { "flags": [ "CANPLAY" ] }
-  },
-  {
     "id": "mon_turkey",
     "type": "MONSTER",
     "copy-from": "mon_turkey",

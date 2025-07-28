@@ -501,24 +501,6 @@
     "armor": { "bash": 10, "cut": 4, "bullet": 3, "electric": 4, "psi_telepathic_damage": 10 }
   },
   {
-    "id": "mon_fungaloid",
-    "copy-from": "mon_fungaloid",
-    "type": "MONSTER",
-    "armor": { "bash": 10, "cut": 4, "bullet": 3, "electric": 4, "psi_telepathic_damage": 20 }
-  },
-  {
-    "id": "mon_fungaloid_young",
-    "copy-from": "mon_fungaloid_young",
-    "type": "MONSTER",
-    "armor": { "bash": 4, "cut": 4, "bullet": 3, "electric": 3, "psi_telepathic_damage": 15 }
-  },
-  {
-    "id": "mon_fungaloid_shambler",
-    "copy-from": "mon_fungaloid_shambler",
-    "type": "MONSTER",
-    "armor": { "bash": 4, "cut": 10, "stab": 20, "acid": 3, "bullet": 20, "electric": 3, "psi_telepathic_damage": 30 }
-  },
-  {
     "id": "mon_ant_fungus",
     "copy-from": "mon_ant_fungus",
     "type": "MONSTER",
@@ -685,5 +667,44 @@
     "copy-from": "mon_yrax_sphenocorona",
     "type": "MONSTER",
     "species": [ "ROBOT", "YRAX_CONSTRUCT" ]
+  },
+  {
+    "id": "mon_zombie_master",
+    "copy-from": "mon_zombie_master",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        {
+          "id": "zed_master_telekin_blast",
+          "type": "spell",
+          "spell_data": { "id": "telepathic_blast_monster", "min_level": 1 },
+          "cooldown": 40,
+          "monster_message": "%1$s looks at %3$s and assaults your mind."
+        },
+        {
+          "id": "zed_master_telekin_blind",
+          "type": "spell",
+          "spell_data": { "id": "telepathic_confusion_monster", "min_level": 1 },
+          "cooldown": 30,
+          "monster_message": "%1$s looks at %3$s and your senses blink out."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_necro",
+    "copy-from": "mon_zombie_necro",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        {
+          "id": "necromancer_vitakin_attack_touch",
+          "type": "spell",
+          "spell_data": { "id": "vitakinetic_attack_touch_monster", "min_level": 1 },
+          "cooldown": 20,
+          "monster_message": "%1$s reaches out and touches %3$s rapidly breaking apart your body."
+        }
+      ]
+    }
   }
 ]
