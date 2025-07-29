@@ -1021,7 +1021,7 @@
     ],
     "flags": [ "NO_PSIONICS" ]
   },
-    {
+  {
     "type": "effect_type",
     "id": "effect_biokin_vitaminosis",
     "name": [ "Vitaminosis" ],
@@ -1030,6 +1030,14 @@
     "remove_message": "",
     "rating": "good",
     "max_duration": "7 days"
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_clair_passive_sense_protection",
+    "//": "Hidden, part of a passive trait",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "GLARE_RESIST", "IMMUNE_HEARING_DAMAGE" ]
   },
   {
     "type": "effect_type",
