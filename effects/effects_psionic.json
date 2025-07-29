@@ -914,6 +914,9 @@
     "removes_effects": [ "slippery_terrain", "effect_biokin_hurricane_blows" ],
     "enchantments": [
       {
+        "condition": {
+          "and": [ { "not": { "u_has_effect": "effect_teleport_stride" } }, { "not": { "u_has_effect": "effect_telekin_momentum" } } ]
+        },
         "values": [
           {
             "value": "MOVE_COST",
@@ -924,9 +927,48 @@
             }
           }
         ]
+      },
+      {
+        "condition": { "and": [ { "u_has_effect": "effect_teleport_stride" }, { "not": { "u_has_effect": "effect_telekin_momentum" } } ] },
+        "values": [
+          {
+            "value": "MOVE_COST",
+            "multiply": {
+              "math": [
+                "max( ( ( ( -0.5 + ( u_spell_level('biokin_perfected_motion') * -0.015) ) + ( ( u_spell_level('teleport_stride') * -0.02 ) - 0.05 ) ) * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling), -0.96)"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "u_has_effect": "effect_telekin_momentum" }, { "not": { "u_has_effect": "effect_teleport_stride" } } ] },
+        "values": [
+          {
+            "value": "MOVE_COST",
+            "multiply": {
+              "math": [
+                "max( ( ( ( -0.5 + ( u_spell_level('biokin_perfected_motion') * -0.015) ) + ( u_spell_level('telekinetic_momentum') * -0.005 ) ) * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling), -0.96)"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "condition": { "and": [ { "u_has_effect": "effect_teleport_stride" }, { "u_has_effect": "effect_telekin_momentum" } ] },
+        "values": [
+          {
+            "value": "MOVE_COST",
+            "multiply": {
+              "math": [
+                "max( ( ( ( -0.5 + ( u_spell_level('biokin_perfected_motion') * -0.015) ) + ( u_spell_level('telekinetic_momentum') * -0.005 ) + ( u_spell_level('telekinetic_momentum') * -0.005 ) ) * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling), -0.96)"
+              ]
+            }
+          }
+        ]
       }
     ],
-    "flags": [ "HARDTOHIT", "UNCANNY_DODGE" ]
+    "flags": [ "HARDTOHIT", "UNCANNY_DODGE", "WATERWALKING", "ITEM_WATERPROOFING" ]
   },
   {
     "type": "effect_type",
