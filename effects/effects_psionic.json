@@ -1498,6 +1498,7 @@
     "remove_message": "",
     "rating": "good",
     "base_mods": { "stamina_min": [ -50 ], "stamina_chance": [ 1 ] },
+    "removes_effects": [ "effect_biokin_perfected_motion" ],
     "enchantments": [
       {
         "values": [
