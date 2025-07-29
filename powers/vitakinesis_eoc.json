@@ -35,7 +35,8 @@
             },
             "effect": [
               { "math": [ "u_vitamin('mutant_toxin')", "+=", "u_vitamin('dermatik_larva_size')" ] },
-              { "u_lose_effect": [ "dermatik", "dermatik_visible" ] },
+              { "u_lose_effect": "dermatik" },
+              { "u_lose_effect": "dermatik_visible" },
               { "math": [ "u_vitamin('dermatik_larva_size')", "=", "0" ] },
               { "u_message": "You feel a severe itching sensation.", "type": "mixed" }
             ],
