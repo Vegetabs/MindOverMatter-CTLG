@@ -18,17 +18,18 @@
           ]
         },
         {
-          "or": [
-            { "compare_string": [ "BIOKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "CLAIRSENTIENT", { "context_val": "school" } ] },
-            { "compare_string": [ "ELECTROKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "PHOTOKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "PYROKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEPATH", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEPORTER", { "context_val": "school" } ] },
-            { "compare_string": [ "VITAKINETIC", { "context_val": "school" } ] }
-          ]
+          "compare_string": [
+              { "context_val": "school" },
+              "BIOKINETIC",
+              "CLAIRSENTIENT",
+              "ELECTROKINETIC",
+              "PHOTOKINETIC",
+              "PYROKINETIC",
+              "TELEKINETIC",
+              "TELEPATH",
+              "TELEPORTER",
+              "VITAKINETIC"
+            ]
         }
       ]
     },
