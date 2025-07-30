@@ -88,10 +88,11 @@
         { "u_has_trait": "PHOTOKINETIC" },
         { "u_has_effect": "effect_photokin_invisibility" },
         {
-          "or": [
-            { "compare_string": [ "walk", { "context_val": "movement_mode" } ] },
-            { "compare_string": [ "crouch", { "context_val": "movement_mode" } ] },
-            { "compare_string": [ "prone", { "context_val": "movement_mode" } ] }
+          "compare_string": [
+            { "context_val": "movement_mode" },
+            "walk",
+            "crouch",
+            "prone"
           ]
         },
         {
@@ -506,7 +507,7 @@
       { "u_add_effect": "downed", "duration": 5 },
       { "u_add_effect": "motor_seizure", "duration": 4 },
       { "u_add_effect": "stunned", "duration": 1 },
-      { "queue_eocs": "EOC_ELECTRO_OVERLOAD_ZAP", "time_in_future": [ "1 minutes", "45 minutes" ] }
+      { "run_eocs": "EOC_ELECTRO_OVERLOAD_ZAP", "time_in_future": [ "1 minutes", "45 minutes" ] }
     ]
   },
   {
@@ -693,11 +694,12 @@
       "and": [
         { "u_has_trait": "TELEPORTER" },
         {
-          "or": [
-            { "compare_string": [ "teleport_blink", { "context_val": "spell" } ] },
-            { "compare_string": [ "teleport_phase", { "context_val": "spell" } ] },
-            { "compare_string": [ "teleport_transpose", { "context_val": "spell" } ] },
-            { "compare_string": [ "teleport_farstep", { "context_val": "spell" } ] }
+          "compare_string": [
+            { "context_val": "spell" },
+            "teleport_blink",
+            "teleport_phase",
+            "teleport_transpose",
+            "teleport_farstep"
           ]
         },
         { "math": [ "u_monsters_nearby('mon_hound_tindalos', 'radius': 50)", ">", "0" ] },
@@ -725,7 +727,7 @@
         { "not": { "u_has_flag": "TEEPSHIELD" } }
       ]
     },
-    "effect": [ { "queue_eocs": "EOC_TELEPORTER_THE_HOUNDS_FOLLOW_GATEWAY_2", "time_in_future": 0 } ]
+    "effect": [ { "run_eocs": "EOC_TELEPORTER_THE_HOUNDS_FOLLOW_GATEWAY_2", "time_in_future": 0 } ]
   },
   {
     "type": "effect_on_condition",

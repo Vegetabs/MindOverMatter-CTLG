@@ -125,7 +125,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_SHIELD_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_SHIELD_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(2)" ] }, { "math": [ "learn_new_power_upper_time_bound(2)" ] } ]
           }
         ]
@@ -204,7 +204,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_MORALE_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_MORALE_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(3)" ] }, { "math": [ "learn_new_power_upper_time_bound(3)" ] } ]
           }
         ]
@@ -284,7 +284,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATHIC_BLAST_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATHIC_BLAST_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(4)" ] }, { "math": [ "learn_new_power_upper_time_bound(4)" ] } ]
           }
         ]
@@ -364,7 +364,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATHIC_ANIMAL_MIND_CONTROL_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATHIC_ANIMAL_MIND_CONTROL_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(4)" ] }, { "math": [ "learn_new_power_upper_time_bound(4)" ] } ]
           }
         ]
@@ -444,7 +444,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_CONFUSION_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_CONFUSION_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(5)" ] }, { "math": [ "learn_new_power_upper_time_bound(5)" ] } ]
           }
         ]
@@ -524,7 +524,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_OBSCURITY_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_OBSCURITY_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(6)" ] }, { "math": [ "learn_new_power_upper_time_bound(6)" ] } ]
           }
         ]
@@ -604,7 +604,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_PRIMAL_FEAR_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_PRIMAL_FEAR_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(6)" ] }, { "math": [ "learn_new_power_upper_time_bound(6)" ] } ]
           }
         ]
@@ -684,7 +684,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_SCREAM_RADIUS_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_SCREAM_RADIUS_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(7)" ] }, { "math": [ "learn_new_power_upper_time_bound(7)" ] } ]
           }
         ]
@@ -764,7 +764,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_BEAST_TAMING_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_BEAST_TAMING_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(7)" ] }, { "math": [ "learn_new_power_upper_time_bound(7)" ] } ]
           }
         ]
@@ -844,7 +844,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_MIND_CONTROL_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_MIND_CONTROL_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(8)" ] }, { "math": [ "learn_new_power_upper_time_bound(8)" ] } ]
           }
         ]
@@ -924,7 +924,7 @@
           { "u_add_effect": "effect_psi_learning_new_power", "duration": "16 hours" },
           { "run_eocs": "EOC_PSI_PRACTICE_FOCUS_MOD" },
           {
-            "queue_eocs": "EOC_PRACTICE_TELEPATH_NETWORK_EFFECT_LEARNING",
+            "run_eocs": "EOC_PRACTICE_TELEPATH_NETWORK_EFFECT_LEARNING",
             "time_in_future": [ { "math": [ "learn_new_power_lower_time_bound(9)" ] }, { "math": [ "learn_new_power_upper_time_bound(9)" ] } ]
           }
         ]
