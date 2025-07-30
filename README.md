@@ -1,5 +1,10 @@
-# Mind Over Matter
-A Psionics mod for Cataclysm: Dark Days Ahead
+# Mind Over Matter - CTLG
+A Port of Mind over Matter (MoM) from C:DDA to C:TLG
+
+## Attribution
+This port would not be possible without the work of numerous DDA contributers. The experimental release was forked from the 2024-03-24-2101 (Commit [#8472b14](https://github.com/CleverRaven/Cataclysm-DDA/commit/8472b14dc54b1b069ad37ad1e225299c9fa2347f)) DDA release, with the main branch backporting features from the current experimental DDA releases. The full list of DDA Mind Over Matter PRs can be found [here](https://github.com/CleverRaven/Cataclysm-DDA/pulls?q=is%3Apr+is%3Aopen+label%3A%22Mods%3A+Mind+Over+Matter%22).
+
+## Psionic Paths
 
 This mod adds (currently) nine separate psionic power paths to Cataclysm, including:
 
@@ -15,21 +20,23 @@ This mod adds (currently) nine separate psionic power paths to Cataclysm, includ
 
 If you would like a random power path, pick the profession "Awakening Psion."
 
+## Psionic Powers
+
 The goal is for each path to be upgraded through usage, since sitting and studying a book for hours doesn't really fit the fiction of improving psychic powers. Powers are gained progressively, with increasing mastery of lower-tier powers unlocking new ones. Powers are based on a new skill called "metaphysics" which you can learn through recipes found from appropriate books in the world. 
 
-ADVANTAGES
+### Advantages
 
 1) Psionic powers are fast. Many powers take less than 100 moves to use, with high-level powers sometimes taking much less (a level 10 Telekinetic Hand takes only 10 moves!), reflecting that they are as fast as thought.
 2) Powers use Stamina as their power source, meaning that a fully-charged psychic is only a five-minute breather away. 
 3) Powers are generally very quiet (generally. Pyrokinesis is very loud)
 
-DISADVANTAGES
+### Disadvantages
 
 1) Powers use Stamina as their power source. This is also a disadvantage because every power use reduces your ability to run away.
 2) Powers have a caloric cost as well as a Stamina cost.  While eldritch magic draws on mystical components and mana, psions must rely on the reserves of their own body.
 3) All powers require concentration and thus are affected by Focus. It's very difficult to concentrate enough to lift a pursuing boomer if you've just fought off a grappler in close range and there's blood all around you.
 
-NETHER ATTUNEMENT
+### Nether Attunement
 
 Long-term power use will attune you to the energies of the Nether. This has no immediate effect, but it does make your power use more unpredicatable the higher your Nether-attunement is. Higher Nether attunement can cause headache or nosebleed, sudden fatigue, a loss of concentration, muscle weakness, or even worse things...but it can also cause a surge of power that increases your overall power level briefly.  Nether-attunement slowly fades with time, and there are faster ways to reduce it.
 
@@ -37,7 +44,7 @@ Power level scales with Nether Attunement.  If you have no Nether attunement, yo
 
 Nether attunement gain is not linear.  If you have no levels in your @ sheet, it accumulates very slowly.  Once you have the first level of Nether Attunement, however, it accumulates much faster. 
 
-POWER TYPES
+### Power Types
 
 Broadly speaking, there are three types of powers:
 
@@ -47,9 +54,9 @@ Broadly speaking, there are three types of powers:
 
 By default, you can maintain concentration on a number of powers equal to your (Intelligence / 4) + any traits, mutations, proficiencies, or effects that change this limit. This is either listed in the description, like how Easily Distracted reduces the concentration potential by 1, or is common sense, like how being set on fire, covered in rotting zombie barf, or so tired you're doubled over and breathing heavily all make it harder to concentrate.  You may maintain your powers for an indefinite length of time as long as you are under your limit, but if you're over your limit, when a concentration check comes up or when you channel a new power you have a chance to lose your concentration. This is checked independently per concentrated power, so being more powers over your limit greatly increases the odds your concentration will break. 
 
-GAINING PSIONICS
+### Gaining Psionics
 
-The easiest way to gain psionics is to pick a profession that starts with them or choose one of the "newly-awakened [X]" hobbies. There are also some strange crystals you might find in places with a strong connection with the Nether, or which are carried by feral psions, or in ruined secret scientific facilities. Or you could walk out into a portal storm unprotected.
+The easiest way to gain psionics is to pick a profession that starts with them or choose one of the "newly-awakened [X]" hobbies. There are also some strange crystals you might find in places with a strong connection with the Nether, or which are carried by feral psions, or in ruined secret scientific facilities.
 
 Listen to the voices.
 
@@ -57,7 +64,7 @@ Bathe in the energies of the Nether.
 
 We have such sights to show you. 
 
-LEARNING NEW POWERS
+### Learning New Powers
 
 New powers are unlocked by leveling existing powers. When particular prerequisites are reached and after a certain amount of time (anywhere from a couple of days to a couple of weeks, depending on power difficulty), you have the chance to unlock the possibility of a new power. Once you’ve done so, you can attempt its contemplation recipe, found in the Practice crafting tab, to attempt to understand the power. If you succeed (success depends on your Metaphysics skill), you’ll unlock the power and it will appear in your powers list. If you fail, you’ll have to try again. You can try repeatedly until you successfully unlock it. 
 
@@ -65,7 +72,7 @@ There is a small chance you can sidestep the prerequisites and discover powers t
 
 To be eligible to learn new powers, you must be in a generally good mental and physical state. Not sick, not suffering from broken bones, not starving, not severely depressed, not asleep, not poisoned and covered in boomer bile, etc.
 
-Further Information
+## Further Information
 
 For a listing of powers, including their requirements to learn, check the [Power Spoilers document](https://github.com/CleverRaven/Cataclysm-DDA/blob/master/data/mods/MindOverMatter/PowerDescriptionSpoilers.md).
 
