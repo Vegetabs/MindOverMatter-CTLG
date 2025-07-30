@@ -2731,6 +2731,23 @@
     ],
     "flags": [ "UNCANNY_DODGE" ]
   },
+    {
+    "type": "effect_type",
+    "id": "effect_teleport_reactive_displacement",
+    "name": [ "Reactive Displacement" ],
+    "desc": [ "You will automatically teleport enemies that strike you away from yourself." ],
+    "remove_message": "The surrounding matter feels real again.",
+    "rating": "good",
+    "enchantments": [ { "hit_me_effect": [ { "id": "teleport_reactive_displacement_teleport" } ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_teleport_loci_establishment",
+    "name": [ "Loci Establishment" ],
+    "desc": [ "You are concentrating on your locus.  You can teleport there at will with the [Ψ]Loci Technique." ],
+    "remove_message": "You've forgotten your locus!.",
+    "rating": "good"
+  },
   {
     "type": "effect_type",
     "id": "effect_teleport_slow",
@@ -2755,6 +2772,12 @@
     "max_duration": "7 days",
     "enchantments": [
       {
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "effect_clair_astral_projection" } },
+            { "not": { "u_has_effect": "effect_biokin_perfected_motion" } }
+          ]
+        },
         "values": [
           {
             "value": "MOVE_COST",
@@ -2766,7 +2789,8 @@
           }
         ]
       }
-    ]
+    ],
+    "flags": [ "MUSCLE_VEH_BOOST" ]
   },
   {
     "type": "effect_type",
