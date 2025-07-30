@@ -1962,9 +1962,8 @@
   {
     "type": "effect_type",
     "id": "effect_pyrokinetic_fire_tool",
-    "//": "Hidden effect, used as a tracker",
-    "name": [ "" ],
-    "desc": [ "" ],
+    "name": [ "Banked Flames" ],
+    "desc": [ "A flame is burning over one of your palms." ],
     "rating": "good",
     "max_duration": "7 days"
   },
@@ -1975,23 +1974,17 @@
     "desc": [ "The air around you has its temperature controlled." ],
     "apply_message": "",
     "remove_message": "A cool breeze hits your skin.",
-    "decay_messages": [
-      [ "The warm air you've surrounded yourself with is nearly spent.", "bad" ],
-      [ "The air around you is slowing beginning to cool.", "bad" ]
-    ],
     "rating": "good",
-    "max_duration": "60 minutes",
+    "max_duration": "7 days",
     "max_intensity": 77,
-    "dur_add_perc": 10,
-    "int_dur_factor": "46 s",
-    "enchantments": [ "enchant_pyrokin_cloak" ]
+    "enchantments": [ "enchant_pyrokin_cloak" ],
+    "flags": [ "BARKY" ]
   },
   {
     "type": "effect_type",
     "id": "effect_pyrokinetic_torch_weld",
-    "//": "Hidden effect, used as a tracker",
-    "name": [ "" ],
-    "desc": [ "" ],
+    "name": [ "Incandescent Lance" ],
+    "desc": [ "A thin beam of searing plasma extends from one finger." ],
     "rating": "good",
     "max_duration": "7 days"
   },
@@ -2002,13 +1995,286 @@
     "desc": [ "You are surrounded by flames." ],
     "apply_message": "",
     "remove_message": "The flames surrounding you gutter out.",
-    "decay_messages": [ [ "The flames around you spark fitfully.", "bad" ], [ "Your aura of flames is beginning to fade.", "bad" ] ],
     "rating": "good",
-    "max_duration": "15 minutes",
+    "max_duration": "7 days",
     "max_intensity": 31,
-    "dur_add_perc": 10,
-    "int_dur_factor": "29 s",
-    "enchantments": [ "enchant_pyrokinetic_aura" ]
+    "removes_effects": [ "effect_pyrokinetic_aura_damage" ],
+    "enchantments": [
+      {
+        "values": [
+          {
+            "value": "LUMINATION",
+            "add": {
+              "math": [
+                "(u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling * 5) + 10"
+              ]
+            }
+          },
+          {
+            "value": "CLIMATE_CONTROL_CHILL",
+            "add": {
+              "math": [
+                "(u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling * 12) + 20"
+              ]
+            }
+          }
+        ],
+        "hit_you_effect": [ { "id": "pyro_aura_attack", "hit_self": false } ]
+      },
+      {
+        "condition": {
+          "math": [
+            "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+            "<=",
+            "3"
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_1"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "3"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "6"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_2"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "6"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "9"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_3"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "9"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "12"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_4"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "12"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "15"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_5"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "15"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "18"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_6"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "18"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "21"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_7"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "21"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "24"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_8"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "24"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "27"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_9"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "27"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "30"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_10"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "30"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "33"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_11"
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                ">",
+                "33"
+              ]
+            },
+            {
+              "math": [
+                "u_spell_level('pyrokinetic_aura') * scaling_factor(u_val('intelligence') ) * u_nether_attunement_power_scaling",
+                "<=",
+                "36"
+              ]
+            }
+          ]
+        },
+        "emitter": "emit_pyrokinetic_aura_12"
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_pyrokinetic_aura_damage",
+    "name": [ "Burning Air" ],
+    "desc": [ "The air is intolerably hot." ],
+    "apply_message": "",
+    "remove_message": "The air cools down.",
+    "max_duration": "2 seconds",
+    "max_intensity": 12,
+    "base_mods": { "hurt_min": [ 1 ], "hurt_max": [ 3 ], "hurt_chance": [ 2 ] },
+    "scaling_mods": { "hurt_min": [ 0.2 ], "hurt_max": [ 0.4 ] }
   },
   {
     "type": "effect_type",
@@ -2020,7 +2286,8 @@
     "rating": "good",
     "max_duration": "7 days",
     "max_intensity": 95,
-    "enchantments": [ { "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 1000 }, { "value": "ARMOR_HEAT", "multiply": -1.0 } ] } ],
+    "blocks_effects": [ "blisters" ],
+    "enchantments": [ { "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 100000 }, { "value": "ARMOR_HEAT", "multiply": -1.0 } ] } ],
     "flags": [ "HEAT_IMMUNE", "HEATSINK" ]
   },
   {
