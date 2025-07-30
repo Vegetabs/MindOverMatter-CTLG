@@ -17,16 +17,18 @@
           "u_has_any_trait": [ "BIOKINETIC", "CLAIRSENTIENT", "PHOTOKINETIC", "PYROKINETIC", "TELEKINETIC", "TELEPATH", "TELEPORTER", "VITAKINETIC" ]
         },
         {
-          "or": [
-            { "compare_string": [ "BIOKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "CLAIRSENTIENT", { "context_val": "school" } ] },
-            { "compare_string": [ "PHOTOKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "PYROKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEPATH", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEPORTER", { "context_val": "school" } ] },
-            { "compare_string": [ "VITAKINETIC", { "context_val": "school" } ] }
-          ]
+          "compare_string": [
+              { "context_val": "school" },
+              "BIOKINETIC",
+              "CLAIRSENTIENT",
+              "ELECTROKINETIC",
+              "PHOTOKINETIC",
+              "PYROKINETIC",
+              "TELEKINETIC",
+              "TELEPATH",
+              "TELEPORTER",
+              "VITAKINETIC"
+            ]
         },
         { "math": [ "_success", "!=", "false" ] }
       ]
@@ -44,16 +46,18 @@
           "u_has_any_trait": [ "BIOKINETIC", "CLAIRSENTIENT", "PHOTOKINETIC", "PYROKINETIC", "TELEKINETIC", "TELEPATH", "TELEPORTER", "VITAKINETIC" ]
         },
         {
-          "or": [
-            { "compare_string": [ "BIOKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "CLAIRSENTIENT", { "context_val": "school" } ] },
-            { "compare_string": [ "PHOTOKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "PYROKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEKINETIC", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEPATH", { "context_val": "school" } ] },
-            { "compare_string": [ "TELEPORTER", { "context_val": "school" } ] },
-            { "compare_string": [ "VITAKINETIC", { "context_val": "school" } ] }
-          ]
+          "compare_string": [
+              { "context_val": "school" },
+              "BIOKINETIC",
+              "CLAIRSENTIENT",
+              "ELECTROKINETIC",
+              "PHOTOKINETIC",
+              "PYROKINETIC",
+              "TELEKINETIC",
+              "TELEPATH",
+              "TELEPORTER",
+              "VITAKINETIC"
+            ]
         },
         { "math": [ "_success", "==", "false" ] }
       ]
@@ -80,12 +84,7 @@
     "id": "EOC_PSIONICS_SLEEP_ENDS_POWERS",
     "eoc_type": "EVENT",
     "required_event": "character_gains_effect",
-    "condition": {
-      "or": [
-        { "compare_string": [ "sleep", { "context_val": "effect" } ] },
-        { "compare_string": [ "lying_down", { "context_val": "effect" } ] }
-      ]
-    },
+    "condition": { "compare_string": [ { "context_val": "effect" }, "sleep", "lying_down" ] },
     "effect": [ { "run_eocs": [ "EOC_END_PSI_POWERS_MAINTAINED" ] } ]
   },
   {
@@ -95,12 +94,7 @@
     "required_event": "character_gains_effect",
     "condition": {
       "and": [
-        {
-          "or": [
-            { "compare_string": [ "stunned", { "context_val": "effect" } ] },
-            { "compare_string": [ "psi_stunned", { "context_val": "effect" } ] }
-          ]
-        },
+        { "compare_string": [ { "context_val": "effect" }, "stunned", "psi_stunned" ] },
         {
           "or": [
             { "u_has_effect": "effect_biokin_overcome_pain" },
@@ -140,11 +134,12 @@
     "condition": {
       "and": [
         {
-          "or": [
-            { "compare_string": [ "dazed", { "context_val": "effect" } ] },
-            { "compare_string": [ "psi_dazed", { "context_val": "effect" } ] },
-            { "compare_string": [ "psi_dazed_zap", { "context_val": "effect" } ] },
-            { "compare_string": [ "downed", { "context_val": "effect" } ] }
+          "compare_string": [
+            { "context_val": "effect" },
+            "dazed",
+            "psi_dazed",
+            "psi_dazed_zap",
+            "downed"
           ]
         },
         {
@@ -200,12 +195,7 @@
     "required_event": "character_gains_effect",
     "condition": {
       "and": [
-        {
-          "or": [
-            { "compare_string": [ "weary_7", { "context_val": "effect" } ] },
-            { "compare_string": [ "weary_8", { "context_val": "effect" } ] }
-          ]
-        },
+        { "compare_string": [ { "context_val": "effect" }, "weary_7", "weary_8" ] },
         { "not": { "u_has_proficiency": "prof_concentration_master" } }
       ]
     },
@@ -219,10 +209,11 @@
     "id": "EOC_PSIONICS_MIND_PROBLEMS_ENDS_POWERS",
     "eoc_type": "EVENT",
     "required_event": "character_gains_effect",
-    "condition": {
-      "or": [
-        { "compare_string": [ "brainworms", { "context_val": "effect" } ] },
-        { "compare_string": [ "pd_int_bad", { "context_val": "effect" } ] }
+    "condition": { 
+      "compare_string": [
+        { "context_val": "effect" },
+        "brainworms",
+        "pd_int_bad"
       ]
     },
     "effect": [ { "run_eocs": [ "EOC_END_PSI_POWERS_MAINTAINED" ] } ]
@@ -236,28 +227,29 @@
     "condition": {
       "and": [
         {
-          "or": [
-            { "compare_string": [ "winded", { "context_val": "effect" } ] },
-            { "compare_string": [ "nausea", { "context_val": "effect" } ] },
-            { "compare_string": [ "asthma", { "context_val": "effect" } ] },
-            { "compare_string": [ "datura", { "context_val": "effect" } ] },
-            { "compare_string": [ "onfire", { "context_val": "effect" } ] },
-            { "compare_string": [ "staggered_character", { "context_val": "effect" } ] },
-            { "compare_string": [ "venom_dmg", { "context_val": "effect" } ] },
-            { "compare_string": [ "venom_pain", { "context_val": "effect" } ] },
-            { "compare_string": [ "boomered", { "context_val": "effect" } ] },
-            { "compare_string": [ "taint", { "context_val": "effect" } ] },
-            { "compare_string": [ "visuals", { "context_val": "effect" } ] },
-            { "compare_string": [ "hallu", { "context_val": "effect" } ] },
-            { "compare_string": [ "formication", { "context_val": "effect" } ] },
-            { "compare_string": [ "meth", { "context_val": "effect" } ] },
-            { "compare_string": [ "weed_high", { "context_val": "effect" } ] },
-            { "compare_string": [ "high", { "context_val": "effect" } ] },
-            { "compare_string": [ "drunk", { "context_val": "effect" } ] },
-            { "compare_string": [ "zapped", { "context_val": "effect" } ] },
-            { "compare_string": [ "effect_psi_reduced_breathing", { "context_val": "effect" } ] },
-            { "compare_string": [ "effect_psi_null", { "context_val": "effect" } ] },
-            { "compare_string": [ "effect_psi_null_unbound", { "context_val": "effect" } ] }
+          "compare_string": [
+            { "context_val": "effect" },
+            "winded",
+            "nausea",
+            "asthma",
+            "datura",
+            "onfire",
+            "staggered_character",
+            "venom_dmg",
+            "venom_pain",
+            "boomered",
+            "taint",
+            "visuals",
+            "hallu",
+            "formication",
+            "meth",
+            "weed_high",
+            "high",
+            "drunk",
+            "zapped",
+            "effect_psi_reduced_breathing",
+            "effect_psi_null",
+            "effect_psi_null_unbound"
           ]
         },
         {
