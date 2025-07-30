@@ -2335,14 +2335,7 @@
               ]
             }
           },
-          {
-            "value": "MOVE_COST",
-            "multiply": {
-              "math": [
-                "max((( ( u_spell_level('telekinetic_momentum') * -0.005 ) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling), -0.15)"
-              ]
-            }
-          },
+          
           {
             "value": "ATTACK_SPEED",
             "multiply": {
@@ -2350,10 +2343,29 @@
                 "( ( u_spell_level('telekinetic_momentum') * -0.01 ) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling"
               ]
             }
+          },
+          {
+            "condition": {
+              "and": [
+                { "not": { "u_has_effect": "effect_clair_astral_projection" } },
+                { "not": { "u_has_effect": "effect_biokin_perfected_motion" } }
+              ]
+            },
+            "values": [
+              {
+                "value": "MOVE_COST",
+                "multiply": {
+                  "math": [
+                    "max((( ( u_spell_level('telekinetic_momentum') * -0.005 ) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling), -0.15)"
+                  ]
+                }
+              }
+            ]
           }
         ]
       }
-    ]
+    ],
+    "flags": [ "MUSCLE_VEH_BOOST" ]
   },
   {
     "type": "effect_type",
@@ -2380,6 +2392,16 @@
     ],
     "limb_score_mods": [ { "limb_score": "swim", "modifier": 3.0 } ],
     "flags": [ "EFFECT_LIMB_SCORE_MOD" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_telekinetic_lifting_field",
+    "name": [ "Lifting Field" ],
+    "desc": [ "You can hover a single item nearby, at the ready." ],
+    "apply_message": "",
+    "remove_message": "Your lifting field dissipates.",
+    "rating": "good",
+    "max_duration": "7 days"
   },
   {
     "type": "effect_type",
@@ -2476,7 +2498,7 @@
     "rating": "good",
     "max_duration": "7 days",
     "max_intensity": 34,
-    "flags": [ "LEVITATION" ]
+    "flags": [ "LEVITATION", "CLIMB_FLYING" ]
   },
   {
     "type": "effect_type",
