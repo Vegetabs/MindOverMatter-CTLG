@@ -28,7 +28,7 @@
     "effect": [
       { "u_message": "Your skin tingles as the poison begins to work its way out of your body.", "type": "mixed" },
       {
-        "queue_eocs": "EOC_VITAKIN_DEXTOXIFICATION_CHECK_2",
+        "run_eocs": "EOC_VITAKIN_DEXTOXIFICATION_CHECK_2",
         "time_in_future": [
           { "math": [ "max( ( 15 - (u_spell_level('vita_remove_poison') * u_nether_attunement_power_scaling) ), 1)" ] },
           {
@@ -74,7 +74,7 @@
     "effect": [
       { "u_add_trait": "TOXICFLESH" },
       {
-        "queue_eocs": "EOC_VITAKIN_DEXTOXIFICATION_TOXICFLESH_REMOVE",
+        "run_eocs": "EOC_VITAKIN_DEXTOXIFICATION_TOXICFLESH_REMOVE",
         "time_in_future": [
           {
             "math": [
@@ -245,7 +245,7 @@
         ]
       },
       {
-        "queue_eocs": "EOC_VITAKIN_CURE_DISEASE_CHECKS",
+        "run_eocs": "EOC_VITAKIN_CURE_DISEASE_CHECKS",
         "time_in_future": [
           { "math": [ "max( ( 600 - (u_spell_level('vita_cure_disease') * 5  ) ), 1)" ] },
           { "math": [ "max( ( 3600 - (u_spell_level('vita_cure_disease') * 30) ), 1)" ] }
