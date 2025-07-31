@@ -24,51 +24,41 @@
       { "u_lose_effect": "effect_clair_perfect_shot" }
     ]
   },
-  {
+    {
     "type": "effect_on_condition",
-    "id": "EOC_MELEE_MONSTER_CANCEL_TOGGLES",
+    "id": "EOC_PSI_NO_COMBAT_POWER_CHARACTER_DAMAGE_CHECK",
     "eoc_type": "EVENT",
-    "required_event": "character_melee_attacks_monster",
-    "condition": { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
-    "effect": [ { "run_eocs": [ "EOC_POWER_TOGGLE_REMOVE_EFFECTS" ] }, { "npc_lose_effect": "telepathic_ignorance" } ]
+    "required_event": "character_takes_damage",
+    "condition": "has_beta",
+    "effect": [
+      {
+        "run_eocs": [
+          {
+            "id": "EOC_PSI_NO_COMBAT_POWER_CHARACTER_DAMAGE_CHECK_2",
+            "condition": { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
+            "effect": [ { "run_eocs": "EOC_POWER_TOGGLE_REMOVE_EFFECTS", "alpha_talker": "npc" } ]
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_MELEE_CHARACTER_CANCEL_TOGGLES",
+    "id": "EOC_PSI_NO_COMBAT_POWER_MONSTER_DAMAGE_CHECK",
     "eoc_type": "EVENT",
-    "required_event": "character_melee_attacks_character",
-    "condition": { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
-    "effect": [ { "run_eocs": [ "EOC_POWER_TOGGLE_REMOVE_EFFECTS" ] }, { "npc_lose_effect": "telepathic_ignorance" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_RANGED_MONSTER_CANCEL_TOGGLES",
-    "eoc_type": "EVENT",
-    "required_event": "character_ranged_attacks_monster",
-    "condition": { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
-    "effect": [ { "run_eocs": [ "EOC_POWER_TOGGLE_REMOVE_EFFECTS" ] }, { "npc_lose_effect": "telepathic_ignorance" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_RANGED_CHARACTER_CANCEL_TOGGLES",
-    "eoc_type": "EVENT",
-    "required_event": "character_ranged_attacks_character",
-    "condition": { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
-    "effect": [ { "run_eocs": [ "EOC_POWER_TOGGLE_REMOVE_EFFECTS" ] }, { "npc_lose_effect": "telepathic_ignorance" } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "EOC_SPELL_CANCEL_TOGGLES",
-    "eoc_type": "EVENT",
-    "required_event": "spellcasting_finish",
-    "condition": {
-      "and": [
-        { "math": [ "_damage", ">=", "1" ] },
-        { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
-        { "test_eoc": "EOC_CONDITION_SPELLCASTING_FINISH_TRAIT_AND_SCHOOL_LIST" }
-      ]
-    },
-    "effect": [ { "run_eocs": [ "EOC_POWER_TOGGLE_REMOVE_EFFECTS" ] } ]
+    "required_event": "monster_takes_damage",
+    "condition": "has_beta",
+    "effect": [
+      {
+        "run_eocs": [
+          {
+            "id": "EOC_PSI_NO_COMBAT_POWER_MONSTER_DAMAGE_CHECK_2",
+            "condition": { "test_eoc": "EOC_CONDITION_LIST_OF_POWERS_CANCELLED_BY_COMBAT" },
+            "effect": [ { "run_eocs": "EOC_POWER_TOGGLE_REMOVE_EFFECTS", "alpha_talker": "npc" } ]
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_on_condition",
@@ -131,7 +121,7 @@
     "eoc_type": "EVENT",
     "required_event": "character_takes_damage",
     "condition": { "u_has_effect": "effect_photokin_dodge" },
-    "effect": [ { "u_lose_effect": "effect_photokin_dodge" } ]
+    "effect": [ { "run_eocs": "EOC_PHOTOKIN_REMOVE_LIGHT_DODGE" } ]
   },
   {
     "type": "effect_on_condition",
@@ -145,7 +135,13 @@
         { "compare_string": [ "BIOKINETIC", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_biokinesis" } }
+              ]
+            },
+            
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -153,7 +149,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -184,7 +180,12 @@
         { "compare_string": [ "CLAIRSENTIENT", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_clairsentience" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -192,7 +193,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -227,7 +228,12 @@
         { "compare_string": [ "ELECTROKINETIC", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_electrokinesis" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -235,7 +241,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -267,7 +273,12 @@
         { "compare_string": [ "PHOTOKINETIC", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_photokinesis" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -275,7 +286,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -310,7 +321,12 @@
         { "compare_string": [ "PYROKINETIC", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_pyrokinesis" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -318,7 +334,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -349,7 +365,12 @@
         { "compare_string": [ "TELEKINETIC", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_telekinesis" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -357,7 +378,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -388,7 +409,12 @@
         { "compare_string": [ "TELEPATH", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_telepathy" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -396,7 +422,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -431,7 +457,12 @@
         { "compare_string": [ "TELEPORTER", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_teleportation" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -439,7 +470,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -470,7 +501,12 @@
         { "compare_string": [ "VITAKINETIC", { "context_val": "school" } ] },
         {
           "or": [
-            { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+            {
+              "and": [
+                { "math": [ "u_vitamin('vitamin_psionic_drain')", ">=", "200" ] },
+                { "not": { "u_has_proficiency": "prof_contemplation_vitakinesis" } }
+              ]
+            },
             { "math": [ "_success", "==", "false" ] },
             { "test_eoc": "EOC_CONDITION_CAUGHT_IN_NETHER_WEATHER" }
           ]
@@ -478,7 +514,7 @@
         {
           "x_in_y_chance": {
             "x": {
-              "math": [ "(10 * (min(0,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain'))" ]
+              "math": [ "(10 * (max(1,( _difficulty - 1 - ( u_skill('metaphysics') / 2 ) ) * 15) ) + u_vitamin('vitamin_psionic_drain') )" ]
             },
             "y": 1000
           }
@@ -512,11 +548,11 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_PSIONICS_KCAL_COST",
+    "id": "EOC_PSIONICS_INITIAL_KCAL_COST",
     "eoc_type": "EVENT",
     "required_event": "spellcasting_finish",
     "condition": { "test_eoc": "EOC_CONDITION_SPELLCASTING_FINISH_TRAIT_AND_SCHOOL_LIST" },
-    "effect": [ { "math": [ "u_calories()", "-=", "psionics_kcal_cost(_difficulty)" ] } ]
+    "effect": [ { "math": [ "u_latest_channeled_power_difficulty = _difficulty" ] }, { "run_eocs": "EOC_PSIONICS_KCAL_COST" } ]
   },
   {
     "type": "effect_on_condition",
