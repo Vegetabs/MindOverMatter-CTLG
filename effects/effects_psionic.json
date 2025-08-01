@@ -2900,6 +2900,14 @@
         "hit_me_effect": [ { "id": "teleport_warper_combat_warp_chance_attacked", "hit_self": true, "once_in": 3 } ],
         "values": [
           {
+            "value": "MELEE_TO_HIT",
+            "add": {
+              "math": [
+                "min( ( ( ( u_spell_level('teleport_warper_combat') * 0.2) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling), 4)"
+              ]
+            }
+          },
+          {
             "value": "MELEE_DAMAGE",
             "multiply": {
               "math": [
