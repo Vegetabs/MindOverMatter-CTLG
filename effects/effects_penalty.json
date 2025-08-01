@@ -214,6 +214,7 @@
       "effect_telepathic_morale",
       "effect_telepath_invisibility",
       "effect_telepath_network_effect",
+      "effect_teleport_ephemeral_walk",
       "effect_teleport_stride",
       "effect_teleport_reactive_displacement",
       "effect_teleport_loci_establishment",
