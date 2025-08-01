@@ -289,7 +289,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_01_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_01_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -348,7 +348,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_02_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_02_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -407,7 +407,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_03_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_03_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -466,7 +466,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_04_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_04_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -525,7 +525,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_05_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_05_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -584,7 +584,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_06_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_06_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -643,7 +643,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_07_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_07_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -702,7 +702,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_08_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_08_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -761,7 +761,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_09_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_09_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]
@@ -820,7 +820,7 @@
       { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
       { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
       {
-        "queue_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_10_SUCCESS",
+        "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_10_SUCCESS",
         "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
       }
     ]

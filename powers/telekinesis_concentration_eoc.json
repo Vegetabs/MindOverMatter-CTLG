@@ -67,7 +67,7 @@
       { "run_eocs": [ "EOC_POWER_MAINTENANCE_PLUS_ONE", "EOC_POWER_MAINTENANCE_PLUS_ONE" ] },
       { "u_add_effect": "effect_telekinetic_water_walking", "duration": "PERMANENT" },
       {
-        "queue_eocs": "EOC_TELEKIN_WATER_WALKING_DRAIN",
+        "run_eocs": "EOC_TELEKIN_WATER_WALKING_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -103,7 +103,7 @@
       { "math": [ "u_spell_exp('telekinetic_water_walk')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
       {
-        "queue_eocs": "EOC_TELEKIN_WATER_WALKING_DRAIN",
+        "run_eocs": "EOC_TELEKIN_WATER_WALKING_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -129,7 +129,7 @@
       { "u_add_effect": "effect_telekinetic_lifting_field", "duration": "PERMANENT" },
       { "run_eocs": [ "EOC_POWER_MAINTENANCE_PLUS_ONE", "EOC_TELEKIN_LIFTING_FIELD_SWITCHER" ] },
       {
-        "queue_eocs": "EOC_TELEKIN_LIFTING_FIELD_DRAIN",
+        "run_eocs": "EOC_TELEKIN_LIFTING_FIELD_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -243,7 +243,7 @@
       { "math": [ "u_spell_exp('telekinetic_lifting_field')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
       {
-        "queue_eocs": "EOC_TELEKIN_LIFTING_FIELD_DRAIN",
+        "run_eocs": "EOC_TELEKIN_LIFTING_FIELD_DRAIN",
         "time_in_future": [
           {
             "math": [

@@ -146,7 +146,7 @@
         "run_eocs": [ "EOC_POWER_MAINTENANCE_PLUS_ONE", "EOC_VITAKIN_CONCENTRATED_HEALING_SELECTOR", "EOC_VITAKIN_REMOVE_HEALTH_POWER" ]
       },
       {
-        "queue_eocs": "EOC_VITAKIN_CONCENTRATED_HEALING_DRAIN",
+        "run_eocs": "EOC_VITAKIN_CONCENTRATED_HEALING_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -161,7 +161,7 @@
         ]
       },
       {
-        "queue_eocs": "EOC_VITAKIN_CONCENTRATED_HEALING_DERMATIK_CHECK",
+        "run_eocs": "EOC_VITAKIN_CONCENTRATED_HEALING_DERMATIK_CHECK",
         "time_in_future": [
           {
             "math": [
@@ -366,7 +366,7 @@
       { "math": [ "u_spell_exp('vita_slow_bleeding')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
       {
-        "queue_eocs": "EOC_VITAKIN_CONCENTRATED_HEALING_DRAIN",
+        "run_eocs": "EOC_VITAKIN_CONCENTRATED_HEALING_DRAIN",
         "time_in_future": [
           {
             "math": [

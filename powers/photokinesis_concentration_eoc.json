@@ -67,7 +67,7 @@
       { "u_add_effect": "effect_photokin_dodge", "duration": "PERMANENT" },
       { "run_eocs": "EOC_POWER_MAINTENANCE_PLUS_ONE" },
       {
-        "queue_eocs": "EOC_PHOTOKIN_LIGHT_DODGE_DRAIN",
+        "run_eocs": "EOC_PHOTOKIN_LIGHT_DODGE_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -100,7 +100,7 @@
       { "math": [ "u_spell_exp('photokinetic_light_dodge')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
       {
-        "queue_eocs": "EOC_PHOTOKIN_LIGHT_DODGE_DRAIN",
+        "run_eocs": "EOC_PHOTOKIN_LIGHT_DODGE_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -390,7 +390,7 @@
       { "u_add_effect": "effect_photokin_invisibility", "duration": "PERMANENT" },
       { "run_eocs": "EOC_POWER_MAINTENANCE_PLUS_ONE" },
       {
-        "queue_eocs": "EOC_PHOTOKIN_INVISIBILITY_DRAIN",
+        "run_eocs": "EOC_PHOTOKIN_INVISIBILITY_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -423,7 +423,7 @@
       { "math": [ "u_spell_exp('photokinetic_invisibility')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
       {
-        "queue_eocs": "EOC_PHOTOKIN_INVISIBILITY_DRAIN",
+        "run_eocs": "EOC_PHOTOKIN_INVISIBILITY_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -449,7 +449,7 @@
       { "u_add_effect": "effect_photokin_blinding_glare", "duration": "PERMANENT" },
       { "run_eocs": "EOC_POWER_MAINTENANCE_PLUS_ONE" },
       {
-        "queue_eocs": "EOC_PHOTOKIN_BLINDING_GLARE_DRAIN",
+        "run_eocs": "EOC_PHOTOKIN_BLINDING_GLARE_DRAIN",
         "time_in_future": [
           {
             "math": [
@@ -482,7 +482,7 @@
       { "math": [ "u_spell_exp('photokinetic_blinding_glare')", "+=", "psionic_power_experience_formula()" ] },
       { "run_eocs": "EOC_POWER_MAINTENANCE_CONCENTRATION_CHECK" },
       {
-        "queue_eocs": "EOC_PHOTOKIN_BLINDING_GLARE_DRAIN",
+        "run_eocs": "EOC_PHOTOKIN_BLINDING_GLARE_DRAIN",
         "time_in_future": [
           {
             "math": [
