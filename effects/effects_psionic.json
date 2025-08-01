@@ -2378,24 +2378,24 @@
                 "( ( u_spell_level('telekinetic_momentum') * -0.01 ) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling"
               ]
             }
-          },
+          }
+        ]
+      },
+      {
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "effect_clair_astral_projection" } },
+            { "not": { "u_has_effect": "effect_biokin_perfected_motion" } }
+          ]
+        },
+        "values": [
           {
-            "condition": {
-              "and": [
-                { "not": { "u_has_effect": "effect_clair_astral_projection" } },
-                { "not": { "u_has_effect": "effect_biokin_perfected_motion" } }
+            "value": "MOVE_COST",
+            "multiply": {
+              "math": [
+                "max((( ( u_spell_level('telekinetic_momentum') * -0.005 ) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling), -0.15)"
               ]
-            },
-            "values": [
-              {
-                "value": "MOVE_COST",
-                "multiply": {
-                  "math": [
-                    "max((( ( u_spell_level('telekinetic_momentum') * -0.005 ) * (scaling_factor(u_val('intelligence') ) ) ) * u_nether_attunement_power_scaling), -0.15)"
-                  ]
-                }
-              }
-            ]
+            }
           }
         ]
       }
