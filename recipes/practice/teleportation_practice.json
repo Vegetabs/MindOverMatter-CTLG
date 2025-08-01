@@ -745,7 +745,7 @@
             "set_string_var": "prof_contemplation_teleportation",
             "target_var": { "u_val": "latest_studied_power_proficiency" }
           },
-          { "math": [ "u_latest_studied_power_difficulty = u_spell_difficulty('teleport_warped_strikes')" ] },
+          { "math": [ "u_latest_studied_power_difficulty = 5" ] },
           { "run_eocs": [ "EOC_PSI_STUDYING_POWER_BEGIN", "EOC_PSI_STUDYING_POWER_SIDE_EFFECTS" ] }
         ],
         "false_effect": [
@@ -757,8 +757,8 @@
           {
             "run_eocs": "EOC_PRACTICE_TELEPORT_WARPED_STRIKES_LEARNING",
             "time_in_future": [
-              { "math": [ "learn_new_power_lower_time_bound( u_spell_difficulty('teleport_warped_strikes') )" ] },
-              { "math": [ "learn_new_power_upper_time_bound( u_spell_difficulty('teleport_warped_strikes') )" ] }
+              { "math": [ "learn_new_power_lower_time_bound(5)" ] },
+              { "math": [ "learn_new_power_upper_time_bound(5)" ] }
             ]
           }
         ]

@@ -1060,7 +1060,7 @@
             "set_string_var": "prof_contemplation_biokinesis",
             "target_var": { "u_val": "latest_studied_power_proficiency" }
           },
-          { "math": [ "u_latest_studied_power_difficulty = u_spell_difficulty('biokin_vitaminosis')" ] },
+          { "math": [ "u_latest_studied_power_difficulty", "=", "8" ] },
           { "run_eocs": [ "EOC_PSI_STUDYING_POWER_BEGIN", "EOC_PSI_STUDYING_POWER_SIDE_EFFECTS" ] }
         ],
         "false_effect": [
@@ -1072,8 +1072,8 @@
           {
             "run_eocs": "EOC_PRACTICE_BIOKIN_VITAMINOSIS_LEARNING",
             "time_in_future": [
-              { "math": [ "learn_new_power_lower_time_bound(u_spell_difficulty('biokin_vitaminosis'))" ] },
-              { "math": [ "learn_new_power_upper_time_bound(u_spell_difficulty('biokin_vitaminosis'))" ] }
+              { "math": [ "learn_new_power_lower_time_bound(8)" ] },
+              { "math": [ "learn_new_power_upper_time_bound(8)" ] }
             ]
           }
         ]
@@ -1148,7 +1148,7 @@
             "set_string_var": "prof_contemplation_biokinesis",
             "target_var": { "u_val": "latest_studied_power_proficiency" }
           },
-          { "math": [ "u_latest_studied_power_difficulty = u_spell_difficulty('biokin_guided_evolution')" ] },
+          { "math": [ "u_latest_studied_power_difficulty = 8" ] },
           { "run_eocs": [ "EOC_PSI_STUDYING_POWER_BEGIN", "EOC_PSI_STUDYING_POWER_SIDE_EFFECTS" ] }
         ],
         "false_effect": [
@@ -1160,8 +1160,8 @@
           {
             "run_eocs": "EOC_PRACTICE_BIOKIN_GUIDED_EVOLUTION_LEARNING",
             "time_in_future": [
-              { "math": [ "learn_new_power_lower_time_bound(u_spell_difficulty('biokin_guided_evolution'))" ] },
-              { "math": [ "learn_new_power_upper_time_bound(u_spell_difficulty('biokin_guided_evolution'))" ] }
+              { "math": [ "learn_new_power_lower_time_bound(8)" ] },
+              { "math": [ "learn_new_power_upper_time_bound(8)" ] }
             ]
           }
         ]

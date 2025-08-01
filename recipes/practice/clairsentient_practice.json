@@ -218,7 +218,7 @@
     "flags": [ "SECRET", "BLIND_EASY", "NO_MANIP", "AFFECTED_BY_PAIN", "NO_BENCH", "NO_ENCHANTMENT" ],
     "result_eocs": [
       {
-        "id": "EOC_PRACTICE_CLAIR_SPEED_READING",
+        "id": "EOC_PRACTICE_CLAIR_NIGHT_VISION",
         "condition": { "math": [ "u_spell_level('clair_speed_reading')", ">=", "1" ] },
         "effect": [
           { "set_string_var": "clair_night_vision", "target_var": { "u_val": "latest_studied_power_name" } },
