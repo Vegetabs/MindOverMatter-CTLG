@@ -11,7 +11,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_BIOKIN_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "BIOKINETIC" },
+    "condition": { "or": [ { "u_has_trait": "BIOKINETIC" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -46,6 +46,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  As it fills your vision, you become aware of the sound of your heartbeat, of the blood rushing through your veins, of the oxygen fueling your muscles.  You see the connections between them all and, only partially aware of how you're doing it, you reach out and adjust the flow.  Strength and power suddenly fill your body, and as you watch the connections with your inner eye, you see what exactly you did and you know how to do it again.  As the light from the crystal fades, leaving it dull and colorless, your vision clears.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "BIOKINETIC" },
       { "u_add_trait": "BIOKIN_NEEDS" },
       { "u_add_effect": "effect_biokin_physical", "duration": "5 minutes" },
@@ -72,7 +73,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_CLAIR_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "CLAIRSENTIENT" },
+    "condition": { "or": [ { "u_has_trait": "CLAIRSENTIENT" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -107,6 +108,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  You remember your childhood, before the end of the world, and then the memories diverge.  You see yourself on an aircraft carrier bridge, looking out the window as a colossal tentacle breaches the surface of the ocean; you stand in a clear white room, watching through a reinforced glass window as your colleague reanimates; you are caught up in the riots and shot by soldiers manning a road block; you are on a camping trip with friends when a nest of pig-sized wasps descend from a formerly-clear sky.  Dozens of lives in quick succession, might-have-beens and never-weres, fragments that fade even as you try to grasp each one in succession.  When the last one ends, you can see through the crystal, through your hands, through the ground.  You can see forever.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "CLAIRSENTIENT" },
       { "u_add_trait": "CLAIR_SENSES" },
       { "u_add_effect": "effect_clair_clear_sight", "duration": "1 minutes" },
@@ -133,7 +135,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_ELECTRO_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "ELECTROKINETIC" },
+    "condition": { "or": [ { "u_has_trait": "ELECTROKINETIC" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -168,6 +170,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  As it fills your vision, you see thin lines beneath your skin.  They pulse with energy, bright sparks traveling to your fingers as you flex them and a burst of internal lightning when you touch the crystal with your free hand.  You raise your hand and hold up two fingers, and a thunderbolt jumps between them accompanied by a loud crackle.  Your hair stands on end as lightning travels down your arm, filling the air with the scent of ozone.  As the light from the crystal fades, leaving it dull and colorless, your skin tingles.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "ELECTROKINETIC" },
       { "u_add_trait": "ELECTRO_SHIELD" },
       { "u_add_effect": "effect_electrokin_zap_enemies", "duration": "5 minutes" },
@@ -194,7 +197,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_PHOTOKIN_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "PHOTOKINETIC" },
+    "condition": { "or": [ { "u_has_trait": "PHOTOKINETIC" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -229,6 +232,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  The crystal's inner light gradually intensifies, starting by revealing the hidden details of your surroundings and then unveiling the world in vivid clarity.  It's not merely light, but a gentle luminescence that emanates a tranquil warmth.  The air around you becomes suffused with a subtle, almost otherworldly radiance, as if you're witnessing a scene from a dream.  Within this radiant spectacle, subtle patterns of light perform an elegant dance, and you find yourself captivated by their graceful movements.  You reach out your free hand, allowing your fingers to interact with the delicate light which seems to respond to your thoughts, and as the crystal's glow ultimately dissipates into obscurity, you're left with a lingering sense of wonder.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "PHOTOKINETIC" },
       { "u_add_trait": "PHOTO_EYES" },
       { "u_add_effect": "effect_photokin_arms", "duration": "5 minutes" },
@@ -257,7 +261,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_PYROKIN_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "PYROKINETIC" },
+    "condition": { "or": [ { "u_has_trait": "PYROKINETIC" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -292,6 +296,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  The crystal begins glowing, the faint light at its core gradually brightening, first shedding light on your surroundings and then throwing everything into sharp relief.  As it blazes in your hands, it begins growing slowly warmer.  The warmth spreads down your arms and across your entire body, filling it with a comfortable heat, and then the air around you takes on the heat and the light.  The air wavers like a summer haze, but even as it sparks and flames dance on the air, you feel only a comfortable warmth.  You reach out your free hand, letting the fire play between your fingers, and when the crystal's glow dims and fades into nothingness, you don't even notice it.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "PYROKINETIC" },
       { "u_add_trait": "PYROKIN_ADAPTATION" },
       { "u_add_effect": "effect_pyrokinetic_cloak", "duration": "5 minutes" },
@@ -319,7 +324,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_TELEKIN_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "TELEKINETIC" },
+    "condition": { "or": [ { "u_has_trait": "TELEKINETIC" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -354,8 +359,9 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  You release your grasp on the crystal but it doesn't fall.  It floats, supported on nothingness, and as you watch it you become aware of the connections between objects.  Gravity, attraction and repulsion, reveal themselves--you can see the weakened influence of gravity on the crystal, and with a thought you nudge it slightly.  The crystal floats up in the air, stretching the connections between it at the ground, before they adjust to its new place.  You tug on the connections, rotating the crystal, moving it from left to right, and as the light within it slowly fades away, you let go and the crystal drops back to your hand.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "TELEKINETIC" },
-      { "u_add_trait": "TELEKINETIC_LIFTER_1" },
+      { "u_add_trait": "TELEKINETIC_GRAB_POCKETS" },
       { "u_add_effect": "effect_telekinetic_armor", "duration": "1 minutes" },
       { "run_eocs": "EOC_TEACH_TELEKIN_CONTEMPLATE_RECIPES" },
       { "math": [ "u_awakening_countup", "+=", "1" ] },
@@ -380,7 +386,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_TEEP_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "TELEPATH" },
+    "condition": { "or": [ { "u_has_trait": "TELEPATH" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -415,6 +421,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  In the light, you can see yourself, standing there holding a glowing crystal, in which you can see another light and a tiny version of yourself in an endless hall of mirrors.  Time slows down--you decide to move your hand and you can feel the thought form in your brain and the signal travel through your nerves to your spine and then on your hands, and you watch as the motion finally occurs.  The light grows brighter as you stand outside yourself observing your own thoughts, and as you feel your attention being drawn to the light, you reach out, nudge your own mind, your awareness of yourself sharpens into laser focus.  As the light and the vision fades, leaving the crystal dull and nearly lifeless, you turn your full attention--FULL attention--to your next task.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "TELEPATH" },
       { "u_add_trait": "TELEPATHIC_SUGGESTION" },
       { "u_add_effect": "effect_telepathic_learning_bonus", "duration": "1 minutes" },
@@ -441,7 +448,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_TELEPORT_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "TELEPORTER" },
+    "condition": { "or": [ { "u_has_trait": "TELEPORTER" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -473,9 +480,10 @@
     "id": "EOC_TELEPORT_MATRIX_AWAKENING_SUCCESS",
     "effect": [
       {
-        "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  As the light spreads and illuminates the surrounding terrain, the air shimmers slightly.  You can see your bedroom, in the place you've been holed up after the end of the world; you can see a city, with buildings made of greenish soapstone and people whose bodies are faces are merely indistinct shadows; you can see the cafe you always used to hang out in, empty and ruined, with the door back in back thumping rhythmically as something pounds on it; you can see a point of light, floating in the midst of a starry void, and hear a reedy toneless hum.  You see the paths that link all four of these places and an infinite number of others, glowing paths that you could easy follow in directions you had never previously known existed.  The light in the crystal fades as you set one foot on a path.",
+        "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  As the light spreads and illuminates the surrounding terrain, the air shimmers slightly.  You can see your bedroom, in the place you've been holed up after the end of the world; you can see a city, with buildings made of greenish soapstone and people whose bodies and faces are merely indistinct shadows; you can see the cafe you always used to hang out in, empty and ruined, with the door in back thumping rhythmically as something pounds on it; you can see a point of light, floating in the midst of a starry void, and hear a reedy toneless hum.  You see the paths that link all four of these places and an infinite number of others, glowing paths that you could easy follow in directions you had never previously known existed.  The light in the crystal fades as you set one foot on a path.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "TELEPORTER" },
       { "u_add_trait": "TELEPORTER_PROTECT" },
       {
@@ -504,7 +512,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_VITAKIN_MATRIX_AWAKENING",
-    "condition": { "u_has_trait": "VITAKINETIC" },
+    "condition": { "or": [ { "u_has_trait": "VITAKINETIC" }, { "u_has_trait": "CANNOT_GAIN_PSIONICS" } ] },
     "effect": [
       {
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  It starts pulsing, first slowly and more rapidly, and your head starts pounding in time with the light.  You tear your gaze away but the pounding in your head remains."
@@ -539,6 +547,7 @@
         "u_message": "You gaze into the strange crystal and the light slowly grows brighter.  You become aware of your skin, of every cut and bruise and scrape, of the food sitting in your stomach and the air moving in and out of your lungs.  You can feel the bits of smoke in the air from the all the fires unleashed by the Cataclysm, the bits of dirt and debris in your wounds, of the char in your food.  Not quite knowing how, you reach out and push at it, all the dirt and grime and filth of daily life in the Cataclysm, sealing it away.  You instantly feel better, like a weight you didn't realize you were carrying has been taken off your shoulders, and as the light from the crystal dims and goes dark you stand up straight.  You're going to be alright.",
         "popup": true
       },
+      { "u_lose_trait": "ALWAYS_GAIN_PSIONICS" },
       { "u_add_trait": "VITAKINETIC" },
       { "u_add_trait": "VITAKINETIC_HEALTH" },
       { "u_add_effect": "effect_vita_health", "duration": "5 minutes" },
@@ -577,6 +586,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_CORUSCATING_MATRIX",
+    "condition": { "not": { "u_has_trait": "CANNOT_GAIN_PSIONICS" } },
     "effect": [
       {
         "weighted_list_eocs": [
