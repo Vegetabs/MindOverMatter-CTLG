@@ -79,12 +79,18 @@
     "purifiable": false,
     "enchantments": [
       {
-        "condition": { "not": { "u_has_flag": "NO_PSIONICS" } },
-        "values": [
-          { "value": "HEARING_MULT", "multiply": 0.2 },
+        "special_vision": [
           {
-            "value": "SIGHT_RANGE_NETHER",
-            "add": { "math": [ "(2 + (0.075 * u_spell_level_sum('school': 'CLAIRSENTIENT')))" ] }
+            "condition": {
+              "and": [
+                { "not": { "u_has_flag": "NO_PSIONICS" } },
+                {
+                  "or": [ { "npc_has_species": "HORROR" }, { "npc_has_species": "NETHER" } ]
+                }
+              ]
+            },
+            "distance": { "math": [ "2 + (0.075 * u_spell_level_sum('school': 'CLAIRSENTIENT'))" ] },
+            "descriptions": [ { "id": "nether_creature_sense", "symbol": "?", "color": "c_pink", "text": "You sense an otherworldy danger here." } ]
           }
         ]
       },
