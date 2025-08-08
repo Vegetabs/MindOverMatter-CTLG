@@ -860,7 +860,7 @@
     "casting_time_increment": -5.5
   },
   {
-    "id": "teleport_area_attune",
+    "id": "teleport_dilated_gateway",
     "type": "SPELL",
     "name": "[Ψ]Dilated Gateway",
     "description": "Transport yourself and every adjacent creature to a chosen location.  You must have already attuned an area with [Ψ]Gateway.",
