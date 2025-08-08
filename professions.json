@@ -64,7 +64,7 @@
           { "item": "sports_drink" },
           { "item": "matrix_crystal_drained" },
           { "group": "charged_smart_phone" },
-          { "item": "tshirt", "variant": "generic_tshirt" }
+          { "item": "tshirt" }
         ]
       },
       "male": { "entries": [ { "item": "boxer_shorts" } ] },
@@ -195,10 +195,10 @@
           { "item": "jeans" },
           { "item": "sneakers" },
           { "item": "matrix_crystal_drained" },
-          { "item": "tshirt", "variant": "generic_tshirt" },
-          { "item": "deck_of_cards", "variant": "generic_deck_of_cards" },
+          { "item": "tshirt" },
+          { "item": "deck_of_cards" },
           { "item": "tophat" },
-          { "item": "teddy_bear", "variant": "toy_plush_rabbit" }
+          { "item": "teddy_bear" }
         ]
       },
       "male": { "entries": [ { "item": "boxer_shorts" } ] },
@@ -227,7 +227,7 @@
           { "item": "jeans" },
           { "item": "sneakers" },
           { "item": "matrix_crystal_drained" },
-          { "item": "tshirt", "variant": "generic_tshirt" },
+          { "item": "tshirt" },
           { "item": "lighter", "charges": 100 },
           { "item": "lighter", "charges": 100 },
           { "group": "charged_matches" }
@@ -336,6 +336,44 @@
           { "item": "water_clean", "container-item": "canteen" },
           { "group": "charged_smart_phone" },
           { "item": "lighter", "charges": 100 }
+        ]
+      },
+      "male": { "entries": [ { "item": "briefs" } ] },
+      "female": { "entries": [ { "item": "bra" }, { "item": "panties" } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "psi_teleporter_haunted",
+    "name": "Haunted Prepper",
+    "description": "You felt the apocalypse before it happened. The opposing planes converged, tearing reality and bringing monsters to Earth. The demons came first, seemingly invisible to everyone else and never giving any acknowledgment, yet they still taunted you for weeks. When the portals finally broke, you understood enough to banish them from this plane.",
+    "points": 8,
+    "skills": [ { "level": 3, "name": "computer" }, { "level": 1, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 4, "name": "metaphysics" } ],
+    "traits": [ "TELEPORTER", "TELEPORTER_PROTECT" ],
+    "spells": [
+      { "id": "teleport_blink", "level": 6 },
+      { "id": "teleport_slow", "level": 8 },
+      { "id": "teleport_displacement", "level": 8 },
+      { "id": "teleport_phase", "level": 5 },
+      { "id": "teleport_transpose", "level": 5 },
+      { "id": "teleport_banish", "level": 4 }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "hoodie" },
+          { "item": "tshirt" },
+          { "item": "sweatpants" },
+          { "item": "socks" },
+          { "item": "sneakers" },
+          { "item": "duffelbag" },
+          { "group": "charged_smart_phone" },
+          { "group": "charged_laptop" },
+          { "item": "water_clean" },
+          { "item": "knife_hunting" },
+          { "item": "glock_19", "ammo-item": "9mm", "charges": 15 },
+          { "item": "glockmag", "ammo-item": "9mm", "charges": 15 },
+          { "item": "matrix_crystal_drained" }
         ]
       },
       "male": { "entries": [ { "item": "briefs" } ] },
