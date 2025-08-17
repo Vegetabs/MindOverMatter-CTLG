@@ -546,7 +546,7 @@
     "base_energy_cost": 8000,
     "base_casting_time": 500
   },
-  {
+    {
     "id": "biokin_guided_evolution",
     "type": "SPELL",
     "name": "[Ψ]Guided Evolution (C)",

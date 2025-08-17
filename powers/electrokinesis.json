@@ -612,7 +612,7 @@
     "description": "Galvanic Aura attacks.  It's a bug if you have it.",
     "message": "",
     "teachable": false,
-    "valid_targets": [ "hostile", "ally" ],
+    "valid_targets": [ "self", "hostile", "ally" ],
     "spell_class": "ELECTROKINETIC",
     "skill": "metaphysics",
     "flags": [ "PSIONIC", "LOUD", "NO_EXPLOSION_SFX", "NO_HANDS", "NO_LEGS" ],

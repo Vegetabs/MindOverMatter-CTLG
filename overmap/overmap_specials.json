@@ -166,9 +166,9 @@
     ],
     "connections": [ { "point": [ 2, -1, 0 ], "terrain": "road", "connection": "local_road", "from": [ 2, 0, 0 ] } ],
     "locations": [ "wilderness" ],
-    "city_distance": [ 8, 120 ],
+    "city_distance": [ 10, 120 ],
     "city_sizes": [ 4, -1 ],
-    "occurrences": [ 50, 100 ],
+    "occurrences": [ 40, 100 ],
     "flags": [ "OVERMAP_UNIQUE", "LAB", "MAN_MADE" ]
   }
 ]

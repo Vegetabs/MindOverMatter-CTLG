@@ -103,7 +103,7 @@
     "type": "effect_on_condition",
     "id": "EOC_PHOTOKINETIC_STERILIZE_FOODS",
     "effect": [
-      { "math": [ "u_photokinetic_sterilize_item_weight_in_grams", "=", "0" ] },
+      { "math": [ "u_photokinetic_sterilize_item_weight_in_grams = 0" ] },
       {
         "u_run_inv_eocs": "manual_mult",
         "title": "What food or drink do you want to sterilize?",
@@ -152,7 +152,7 @@
     "condition": { "u_has_effect": "effect_photokin_sterilization" },
     "effect": [
       { "math": [ "u_calories()", "-=", "rand(2) + 1" ] },
-      { "queue_eocs": "EOC_PHOTOKIN_RADIATION_STERILIZATION_COST", "time_in_future": [ 10, 15 ] }
+      { "run_eocs": "EOC_PHOTOKIN_RADIATION_STERILIZATION_COST", "time_in_future": [ 10, 15 ] }
     ]
   },
   {
