@@ -423,7 +423,7 @@
       },
       { "run_eocs": "EOC_ELECTROKIN_PERSONAL_BATTERY_EFFECT" }
     ]
-        },
+  },
   {
     "type": "effect_on_condition",
     "id": "EOC_ELECTROKIN_PERSONAL_BATTERY_EFFECT_GET_ITEM_COUNT",
