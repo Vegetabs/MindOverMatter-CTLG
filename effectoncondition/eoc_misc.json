@@ -288,5 +288,48 @@
       { "u_message": "Your stomach is seized with cramps!", "type": "bad" },
       { "u_add_effect": "alienfoodpoison", "duration": { "math": [ "3600 + rand(16200)" ] } }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CHECK_PSION_HAS_MATRIX",
+    "eoc_type": "EVENT",
+    "required_event": "game_avatar_new",
+    "condition": {
+      "u_has_any_trait": [
+        "BIOKINETIC",
+        "CLAIRSENTIENT",
+        "ELECTROKINETIC",
+        "PHOTOKINETIC",
+        "PYROKINETIC",
+        "TELEKINETIC",
+        "TELEPATH",
+        "TELEPORTER",
+        "VITAKINETIC"
+      ]
+    },
+    "effect": [
+      {
+        "u_run_inv_eocs": "all",
+        "search_data": [
+          { "id": "matrix_crystal_biokinesis" },
+          { "id": "matrix_crystal_clairsentience" },
+          { "id": "matrix_crystal_electrokinesis" },
+          { "id": "matrix_crystal_photokinesis" },
+          { "id": "matrix_crystal_pyrokinesis" },
+          { "id": "matrix_crystal_telekinesis" },
+          { "id": "matrix_crystal_telepathy" },
+          { "id": "matrix_crystal_teleportation" },
+          { "id": "matrix_crystal_vitakinesis" },
+          { "id": "matrix_crystal_drained" },
+          { "id": "matrix_crystal_coruscating" }
+        ],
+        "false_eocs": [ "EOC_GIVE_PSION_MATRIX" ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_GIVE_PSION_MATRIX",
+    "effect": [ { "u_spawn_item": "matrix_crystal_drained" } ]
   }
 ]
