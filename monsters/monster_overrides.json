@@ -513,8 +513,8 @@
     "armor": { "electric": 3, "psi_telepathic_damage": 4 }
   },
   {
-    "id": "mon_zombie_fungus",
-    "copy-from": "mon_zombie_fungus",
+    "id": "mon_zombie_fungal",
+    "copy-from": "mon_zombie_fungal",
     "type": "MONSTER",
     "armor": { "bash": 3, "electric": 5, "psi_telepathic_damage": 6 }
   },
