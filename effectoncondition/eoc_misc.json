@@ -331,5 +331,10 @@
     "type": "effect_on_condition",
     "id": "EOC_GIVE_PSION_MATRIX",
     "effect": [ { "u_spawn_item": "matrix_crystal_drained" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_DEBUG_BLANK",
+    "effect": [ { "u_message": "" } ]
   }
 ]
