@@ -560,10 +560,9 @@
       { "math": [ "u_vitamin('mutagen_raptor')", "=", "0" ] },
       { "math": [ "u_vitamin('mutagen_rat')", "=", "0" ] },
       { "math": [ "u_vitamin('mutagen_slime')", "=", "0" ] },
-      { "math": [ "u_vitamin('mutagen_spider')", "=", "0" ] },
+      { "math": [ "u_vitamin('mutagen_aranean')", "=", "0" ] },
       { "math": [ "u_vitamin('mutagen_troglobite')", "=", "0" ] },
       { "math": [ "u_vitamin('mutagen_ursine')", "=", "0" ] },
-      { "math": [ "u_vitamin('mutagenic_slurry')", "=", "0" ] },
       { "math": [ "u_vitamin('mutant_toxin')", "=", "0" ] },
       { "math": [ "u_vitamin('mutagen_crustacean')", "=", "0" ] }
     ]
