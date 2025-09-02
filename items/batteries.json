@@ -20,10 +20,10 @@
     "color": "cyan",
     "ammo_type": [ "battery" ],
     "//": "Capacity 3x normal",
-    "capacity": 48,
+    "capacity": 300,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "BATTERY_LIGHT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 48 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 300 } } ]
   },
   {
     "id": "light_battery_electronoetic_refined",
@@ -32,8 +32,8 @@
     "category": "tool_magazine",
     "name": { "str": "light refined electronoetic battery", "str_pl": "light refined electronoetic batteries" },
     "//": "Capacity 8x normal",
-    "capacity": 128,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 128 } } ]
+    "capacity": 800,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 800 } } ]
   },
   {
     "id": "medium_battery_electronoetic",
@@ -58,8 +58,8 @@
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "BATTERY_MEDIUM" ],
     "//": "Capacity 3x normal",
-    "capacity": 168,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 168 } } ]
+    "capacity": 1500,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1500 } } ]
   },
   {
     "id": "medium_battery_electronoetic_refined",
@@ -68,8 +68,8 @@
     "category": "tool_magazine",
     "name": { "str": "medium refined electronoetic battery", "str_pl": "medium refined electronoetic batteries" },
     "//": "Capacity 8x normal",
-    "capacity": 448,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 448 } } ]
+    "capacity": 4000,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 4000 } } ]
   },
   {
     "id": "heavy_battery_electronoetic",
@@ -93,10 +93,10 @@
     "color": "cyan",
     "ammo_type": [ "battery" ],
     "//": "Capacity 3x normal",
-    "capacity": 777,
+    "capacity": 3000,
     "looks_like": "battery",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "BATTERY_HEAVY" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 777 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 3000 } } ]
   },
   {
     "id": "heavy_battery_electronoetic_refined",
@@ -105,7 +105,7 @@
     "category": "tool_magazine",
     "name": { "str": "refined electronoetic tool battery", "str_pl": "refined electronoetic tool batteries" },
     "//": "Capacity 8x normal",
-    "capacity": 2072,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 2072 } } ]
+    "capacity": 8000,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 8000 } } ]
   }
 ]
