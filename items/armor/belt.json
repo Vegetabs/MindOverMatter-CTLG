@@ -110,6 +110,7 @@
     "symbol": "[",
     "looks_like": "leather_belt",
     "color": "red",
+    "ammo": [ "battery" ],
     "material_thickness": 1.5,
     "pocket_data": [
       {
