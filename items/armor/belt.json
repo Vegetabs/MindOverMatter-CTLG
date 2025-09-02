@@ -12,6 +12,7 @@
     "symbol": "[",
     "looks_like": "leather_belt",
     "color": "yellow",
+    "ammo": [ "battery" ],
     "material_thickness": 1.5,
     "flags": [ "BELTED", "OVERSIZE", "NONCONDUCTIVE", "NO_REPAIR", "COMBAT_TOGGLEABLE" ],
     "use_action": [
