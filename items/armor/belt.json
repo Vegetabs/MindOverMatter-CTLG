@@ -12,6 +12,7 @@
     "symbol": "[",
     "looks_like": "leather_belt",
     "color": "yellow",
+    "ammo": [ "battery" ],
     "material_thickness": 1.5,
     "flags": [ "BELTED", "OVERSIZE", "NONCONDUCTIVE", "NO_REPAIR", "COMBAT_TOGGLEABLE" ],
     "use_action": [
@@ -66,7 +67,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "shield belt (active)", "str_pl": "shield belts (active)" },
     "copy-from": "psionic_shield_belt",
-    "power_draw": "150 W",
+    "power_draw": "1500 W",
     "revert_to": "psionic_shield_belt",
     "use_action": [
       {
@@ -109,6 +110,7 @@
     "symbol": "[",
     "looks_like": "leather_belt",
     "color": "red",
+    "ammo": [ "battery" ],
     "material_thickness": 1.5,
     "pocket_data": [
       {
@@ -159,7 +161,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "suppression belt (active)", "str_pl": "suppression belts (active)" },
     "copy-from": "psionic_fire_shield_belt",
-    "power_draw": "50 W",
+    "power_draw": "500 W",
     "revert_to": "psionic_fire_shield_belt",
     "use_action": [
       {
