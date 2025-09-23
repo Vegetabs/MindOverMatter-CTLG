@@ -218,7 +218,8 @@
     "id": "egg_cockatrice",
     "name": { "str": "cockatrice egg" },
     "copy-from": "egg_chicken",
-    "rot_spawn": "GROUP_EGG_COCKATRICE"
+    "//": "Copied new rot_spawn chance from egg_chicken def",
+    "rot_spawn": { "group": "GROUP_EGG_COCKATRICE", "chance": 70 }
   },
   {
     "id": "black_nether_water",
