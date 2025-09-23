@@ -1480,7 +1480,7 @@
         ]
       }
     ],
-    "flags": [ "MYOPIC", "CRAFT_IN_DARKNESS" ]
+    "flags": [ "MYOPIC", "BLIND_CRAFT" ]
   },
   {
     "type": "effect_type",
