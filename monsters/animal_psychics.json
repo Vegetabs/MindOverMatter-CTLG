@@ -238,7 +238,7 @@
       "pet": "The %s runs around your leg."
     },
     "extend": { "flags": [ "CANPLAY" ] },
-    "upgrades": { "age_grow": 12, "into": "mon_cockatrice" }
+    "upgrades": { "age_grow": 48, "into": "mon_cockatrice" }
   },
   {
     "id": "mon_pigeon_passenger",
