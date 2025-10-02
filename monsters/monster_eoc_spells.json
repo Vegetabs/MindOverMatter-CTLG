@@ -113,12 +113,18 @@
     "valid_targets": [ "hostile" ],
     "flags": [ "NO_PROJECTILE", "NO_EXPLOSION_SFX" ],
     "effect": "effect_on_condition",
-    "effect_str": "EOC_NULL_BREAK_CONCENTRATION",
+    "effect_str": "EOC_NULL_BREAK_CHECK_IF_CHAR",
     "shape": "blast",
     "max_level": 1,
     "min_damage": 1,
     "max_damage": 2,
     "min_range": 25
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_NULL_BREAK_CHECK_IF_CHAR",
+    "condition": "u_is_character",
+    "effect": { "run_eocs": "EOC_NULL_BREAK_CONCENTRATION" }
   },
   {
     "type": "effect_on_condition",
