@@ -15,7 +15,7 @@
           "id": "psi_hidebehind_obscurity_activate",
           "type": "spell",
           "spell_data": { "id": "hidebehind_apply_obscurity_power" },
-          "cooldown": { "math": [ "5 + rand(10)" ] },
+          "cooldown": 10,
           "condition": {
             "and": [
               { "not": { "u_has_flag": "NO_PSIONICS" } },
