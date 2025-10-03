@@ -67,7 +67,7 @@
     "decay": "zombie_decay_bone",
     "special_attacks": [ { "type": "leap", "cooldown": 10, "max_range": 5 } ],
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
-    "upgrades": { "half_life": 168, "into_group": "GROUP_ZOUGAR_UPGRADE" },
+    "upgrades": { "half_life": 42, "into_group": "GROUP_ZOUGAR_UPGRADE" },
     "fungalize_into": "mon_zougar_fungus",
     "flags": [
       "SEES",
