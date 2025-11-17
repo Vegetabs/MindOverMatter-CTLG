@@ -127,7 +127,6 @@
       { "monster": "mon_zombie_hazmat", "weight": 200 },
       { "monster": "mon_zombie_necro", "weight": 15, "cost_multiplier": 5 },
       { "monster": "mon_zombie_electric", "weight": 50, "cost_multiplier": 2 },
-      { "monster": "mon_science_bot", "weight": 80, "cost_multiplier": 5 },
       { "monster": "mon_secubot", "weight": 1, "cost_multiplier": 5 },
       { "monster": "mon_zombie", "weight": 100, "pack_size": [ 1, 3 ] },
       { "monster": "mon_zombie_fat", "weight": 20, "pack_size": [ 1, 3 ] },
