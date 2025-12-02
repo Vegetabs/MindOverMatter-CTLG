@@ -663,12 +663,6 @@
     "species": [ "ROBOT", "YRAX_CONSTRUCT" ]
   },
   {
-    "id": "mon_yrax_sphenocorona",
-    "copy-from": "mon_yrax_sphenocorona",
-    "type": "MONSTER",
-    "species": [ "ROBOT", "YRAX_CONSTRUCT" ]
-  },
-  {
     "id": "mon_zombie_master",
     "copy-from": "mon_zombie_master",
     "type": "MONSTER",

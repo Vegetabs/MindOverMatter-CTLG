@@ -70,16 +70,9 @@
     "extend": { "flags": [ "CANPLAY", "PET_MOUNTABLE" ] }
   },
   {
-    "id": "mon_fox_gray",
+    "id": "mon_fox",
     "type": "MONSTER",
-    "copy-from": "mon_fox_gray",
-    "name": { "str": "fox", "str_pl": "foxes" },
-    "extend": { "flags": [ "CANPLAY" ] }
-  },
-  {
-    "id": "mon_fox_red",
-    "type": "MONSTER",
-    "copy-from": "mon_fox_red",
+    "copy-from": "mon_fox",
     "name": { "str": "fox", "str_pl": "foxes" },
     "extend": { "flags": [ "CANPLAY" ] }
   },
