@@ -778,9 +778,9 @@
       ],
       "palettes": [ "office_phavian_palette" ],
       "place_item": [
-        { "item": "escape_stone", "x": 3, "y": 4, "chance": 30 },
+        { "item": "pebble", "x": 3, "y": 4, "chance": 30 },
         { "item": "vortex_stone", "x": 4, "y": 4, "chance": 30 },
-        { "item": "calming_stone", "x": 0, "y": 4, "chance": 30 },
+        { "item": "pebble", "x": 0, "y": 4, "chance": 30 },
         { "item": "chaos_stone", "x": 7, "y": 6, "chance": 30 }
       ],
       "items": {
@@ -818,9 +818,9 @@
       ],
       "palettes": [ "office_phavian_palette" ],
       "place_item": [
-        { "item": "escape_stone", "x": 4, "y": 3, "chance": 30 },
+        { "item": "pebble", "x": 4, "y": 3, "chance": 30 },
         { "item": "vortex_stone", "x": 3, "y": 3, "chance": 30 },
-        { "item": "calming_stone", "x": 7, "y": 3, "chance": 30 },
+        { "item": "pebble", "x": 7, "y": 3, "chance": 30 },
         { "item": "chaos_stone", "x": 0, "y": 1, "chance": 30 }
       ],
       "items": {
