@@ -34,7 +34,7 @@
     "price_postapoc": "1 USD",
     "symbol": ";",
     "color": "blue",
-    "ammo": [ "battery" ],
+    "tool_ammo": [ "battery" ],
     "charges_per_use": 1,
     "use_action": {
       "target": "psionic_transporter_remote_on",
@@ -67,7 +67,7 @@
     "price_postapoc": "1 USD",
     "symbol": ";",
     "color": "blue",
-    "ammo": [ "battery" ],
+    "tool_ammo": [ "battery" ],
     "charges_per_use": 1,
     "use_action": [
       {

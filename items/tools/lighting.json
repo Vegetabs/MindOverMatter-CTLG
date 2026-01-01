@@ -13,7 +13,7 @@
     "price": "15 USD",
     "price_postapoc": "5 USD",
     "charges_per_use": 1,
-    "ammo": [ "battery" ],
+    "tool_ammo": [ "battery" ],
     "flags": [ "BELT_CLIP", "WATER_BREAK_ACTIVE" ],
     "use_action": {
       "type": "transform",
