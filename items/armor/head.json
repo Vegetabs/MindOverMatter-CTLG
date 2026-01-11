@@ -51,7 +51,7 @@
     "material": [ { "type": "plastic", "portion": 12 }, { "type": "nether_crystal" } ],
     "symbol": "[",
     "color": "white",
-    "ammo": "battery",
+    "tool_ammo": "battery",
     "charges_per_use": 1,
     "use_action": {
       "type": "transform",
