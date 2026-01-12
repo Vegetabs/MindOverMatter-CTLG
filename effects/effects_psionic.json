@@ -158,6 +158,8 @@
     "//": "effect used as tracker",
     "name": [ "Oxygen Absorption" ],
     "desc": [ "You can absorb oxygen through your skin." ],
+    "apply_message": "",
+    "remove_message": "You feel your skin seal shut.",
     "rating": "good",
     "max_duration": "7 days"
   },
