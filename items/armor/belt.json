@@ -1,20 +1,27 @@
 [
   {
     "id": "psionic_shield_belt",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
     "name": { "str": "shield belt" },
     "description": "A simple synthetic fabric belt with a box to the right of the belt loop.  The box has a toggleable switch and a stylized shield with Ψ and the XEDRA logo inside it.",
     "weight": "350 g",
     "volume": "500 ml",
     "price": "100 USD",
     "price_postapoc": "50 USD",
-    "material": [ "nylon", "steel", "nether_crystal" ],
+    "material": ["nylon", "steel", "nether_crystal"],
     "symbol": "[",
     "looks_like": "leather_belt",
     "color": "yellow",
-    "tool_ammo": [ "battery" ],
+    "tool_ammo": ["battery"],
     "material_thickness": 1.5,
-    "flags": [ "BELTED", "OVERSIZE", "NONCONDUCTIVE", "NO_REPAIR", "COMBAT_TOGGLEABLE" ],
+    "flags": [
+      "BELTED",
+      "OVERSIZE",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "COMBAT_TOGGLEABLE"
+    ],
     "use_action": [
       {
         "type": "transform",
@@ -31,7 +38,7 @@
       {
         "pocket_type": "MAGAZINE_WELL",
         "rigid": true,
-        "flag_restriction": [ "BATTERY_MEDIUM" ],
+        "flag_restriction": ["BATTERY_MEDIUM"],
         "default_magazine": "medium_battery_cell"
       }
     ],
@@ -39,8 +46,8 @@
       {
         "encumbrance": 2,
         "coverage": 50,
-        "covers": [ "torso" ],
-        "specifically_covers": [ "torso_waist" ],
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"],
         "volume_encumber_modifier": 0.35
       }
     ],
@@ -51,7 +58,12 @@
           "condition": "ACTIVE",
           "name": "Active Shield Belt",
           "description": "The air around you has a faint shimmer.",
-          "ench_effects": [ { "effect": "effect_shield_belt_telekin_protection", "intensity": 1 } ],
+          "ench_effects": [
+            {
+              "effect": "effect_shield_belt_telekin_protection",
+              "intensity": 1
+            }
+          ],
           "incoming_damage_mod": [
             { "type": "cut", "add": -15 },
             { "type": "bash", "add": -8 },
@@ -64,8 +76,12 @@
   },
   {
     "id": "psionic_shield_belt_on",
-    "type": "TOOL_ARMOR",
-    "name": { "str": "shield belt (active)", "str_pl": "shield belts (active)" },
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
+    "name": {
+      "str": "shield belt (active)",
+      "str_pl": "shield belts (active)"
+    },
     "copy-from": "psionic_shield_belt",
     "power_draw": "1500 W",
     "revert_to": "psionic_shield_belt",
@@ -78,11 +94,12 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "NO_TAKEOFF" ] }
+    "extend": { "flags": ["NO_TAKEOFF"] }
   },
   {
     "id": "psionic_shield_belt_broken",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
     "name": { "str": "shield belt" },
     "copy-from": "psionic_shield_belt",
     "description": "A simple synthetic fabric belt with a box to the right of the belt loop.  The box has a toggleable switch and a stylized shield with Ψ and the XEDRA logo inside it.  It also has a large crack across it and rattles when moved.",
@@ -99,24 +116,25 @@
   },
   {
     "id": "psionic_fire_shield_belt",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
     "name": { "str": "suppression belt" },
     "description": "A simple synthetic fabric belt with a box to the right of the belt loop.  The box has a toggleable switch and a stylized flame with a large circle and line superimposed over it and a Ψ behind the XEDRA logo inside it.",
     "weight": "350 g",
     "volume": "500 ml",
     "price": "100 USD",
     "price_postapoc": "50 USD",
-    "material": [ "nylon", "steel", "nether_crystal" ],
+    "material": ["nylon", "steel", "nether_crystal"],
     "symbol": "[",
     "looks_like": "leather_belt",
     "color": "red",
-    "tool_ammo": [ "battery" ],
+    "tool_ammo": ["battery"],
     "material_thickness": 1.5,
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE_WELL",
         "rigid": true,
-        "flag_restriction": [ "BATTERY_MEDIUM" ],
+        "flag_restriction": ["BATTERY_MEDIUM"],
         "default_magazine": "medium_battery_electronoetic"
       }
     ],
@@ -132,13 +150,19 @@
         "menu_text": "Flip the switch"
       }
     ],
-    "flags": [ "BELTED", "OVERSIZE", "NONCONDUCTIVE", "NO_REPAIR", "COMBAT_TOGGLEABLE" ],
+    "flags": [
+      "BELTED",
+      "OVERSIZE",
+      "NONCONDUCTIVE",
+      "NO_REPAIR",
+      "COMBAT_TOGGLEABLE"
+    ],
     "armor": [
       {
         "encumbrance": 2,
         "coverage": 50,
-        "covers": [ "torso" ],
-        "specifically_covers": [ "torso_waist" ],
+        "covers": ["torso"],
+        "specifically_covers": ["torso_waist"],
         "volume_encumber_modifier": 0.35
       }
     ],
@@ -149,17 +173,26 @@
           "condition": "ACTIVE",
           "name": "Active Suppression Belt",
           "description": "The air around you feels cool.",
-          "incoming_damage_mod": [ { "type": "heat", "multiply": -1 } ],
-          "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 1000 } ],
-          "ench_effects": [ { "effect": "effect_suppression_belt_fire_protection", "intensity": 1 } ]
+          "incoming_damage_mod": [{ "type": "heat", "multiply": -1 }],
+          "values": [{ "value": "CLIMATE_CONTROL_CHILL", "add": 1000 }],
+          "ench_effects": [
+            {
+              "effect": "effect_suppression_belt_fire_protection",
+              "intensity": 1
+            }
+          ]
         }
       ]
     }
   },
   {
     "id": "psionic_fire_shield_belt_on",
-    "type": "TOOL_ARMOR",
-    "name": { "str": "suppression belt (active)", "str_pl": "suppression belts (active)" },
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
+    "name": {
+      "str": "suppression belt (active)",
+      "str_pl": "suppression belts (active)"
+    },
     "copy-from": "psionic_fire_shield_belt",
     "power_draw": "500 W",
     "revert_to": "psionic_fire_shield_belt",
@@ -172,11 +205,12 @@
         "type": "transform"
       }
     ],
-    "extend": { "flags": [ "NO_TAKEOFF" ] }
+    "extend": { "flags": ["NO_TAKEOFF"] }
   },
   {
     "id": "psionic_fire_shield_belt_broken",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
     "copy-from": "psionic_fire_shield_belt",
     "name": { "str": "suppression belt" },
     "description": "A simple synthetic fabric belt with a box to the right of the belt loop.  The box has a toggleable switch and a stylized flame with a large circle and line superimposed over it and a Ψ behind the XEDRA logo inside it.  It also has a large crack across it and rattles when moved.",
@@ -194,7 +228,7 @@
       {
         "pocket_type": "MAGAZINE_WELL",
         "rigid": true,
-        "flag_restriction": [ "BATTERY_MEDIUM" ],
+        "flag_restriction": ["BATTERY_MEDIUM"],
         "default_magazine": "medium_battery_electronoetic"
       }
     ]
