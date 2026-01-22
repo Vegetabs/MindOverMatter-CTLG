@@ -1,54 +1,97 @@
 [
   {
     "id": "psionic_anchoring_crown",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": ["ARMOR"],
     "name": { "str": "anchoring crown" },
     "description": "A thin steel circlet studded with chunks of matrix crystal.  Your skin prickles slightly where the crown touches it.",
     "weight": "80 g",
     "volume": "100 ml",
     "price": "50 USD",
     "price_postapoc": "25 cent",
-    "material": [ { "type": "steel", "portion": 9 }, { "type": "nether_crystal" } ],
+    "material": [
+      { "type": "steel", "portion": 9 },
+      { "type": "nether_crystal" }
+    ],
     "looks_like": "crown_golden",
     "symbol": "[",
     "color": "blue",
     "material_thickness": 1,
-    "flags": [ "DIMENSIONAL_ANCHOR", "PADDED" ],
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "ANCHORCROWN_NOSPELL" ] } ] },
-    "armor": [ { "encumbrance": 1, "coverage": 20, "covers": [ "head" ], "specifically_covers": [ "head_crown" ] } ]
+    "flags": ["DIMENSIONAL_ANCHOR", "PADDED"],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": ["ANCHORCROWN_NOSPELL"]
+        }
+      ]
+    },
+    "armor": [
+      {
+        "encumbrance": 1,
+        "coverage": 20,
+        "covers": ["head"],
+        "specifically_covers": ["head_crown"]
+      }
+    ]
   },
   {
     "id": "psionic_telepathic_dampener",
-    "type": "ARMOR",
+    "type": "ITEM",
+    "subtypes": ["ARMOR"],
     "name": { "str": "telepathic dampener" },
     "description": "A steel skullcap with a matrix crystal at its crown.  It looks ridiculous, but the documents you read said it would protect you from telepathic attack.",
     "weight": "767 g",
     "volume": "2 L",
     "price": "30 USD",
     "price_postapoc": "25 cent",
-    "material": [ { "type": "steel", "portion": 12 }, { "type": "nether_crystal" } ],
+    "material": [
+      { "type": "steel", "portion": 12 },
+      { "type": "nether_crystal" }
+    ],
     "looks_like": "miner_hat",
     "symbol": "[",
     "color": "white",
     "material_thickness": 0.33,
-    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "mutations": [ "TELEPATHICDAMPENER_SHIELD" ] } ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "mutations": ["TELEPATHICDAMPENER_SHIELD"]
+        }
+      ]
+    },
     "armor": [
-      { "encumbrance": 4, "coverage": 100, "covers": [ "head" ], "specifically_covers": [ "head_crown", "head_forehead" ] }
+      {
+        "encumbrance": 4,
+        "coverage": 100,
+        "covers": ["head"],
+        "specifically_covers": ["head_crown", "head_forehead"]
+      }
     ],
-    "flags": [ "PADDED", "PORTAL_PROOF" ]
+    "flags": ["PADDED", "PORTAL_PROOF"]
   },
   {
     "id": "psionic_mindsight_glasses",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
     "category": "clothing",
     "looks_like": "ar_glasses_advanced",
-    "name": { "str": "QD944-P 'Mindsight' glasses", "str_pl": "sets of QD944-P 'Mindsight' glasses" },
+    "name": {
+      "str": "QD944-P 'Mindsight' glasses",
+      "str_pl": "sets of QD944-P 'Mindsight' glasses"
+    },
     "description": "A set of AR-looking glasses.  The code \"QD944-P\" is printed in small letters on the temples.",
     "weight": "170 g",
     "volume": "750 ml",
     "price": "30 kUSD",
     "price_postapoc": "400 USD",
-    "material": [ { "type": "plastic", "portion": 12 }, { "type": "nether_crystal" } ],
+    "material": [
+      { "type": "plastic", "portion": 12 },
+      { "type": "nether_crystal" }
+    ],
     "symbol": "[",
     "color": "white",
     "tool_ammo": "battery",
@@ -65,14 +108,21 @@
       {
         "pocket_type": "MAGAZINE_WELL",
         "rigid": true,
-        "flag_restriction": [ "BATTERY_LIGHT", "BATTERY_ULTRA_LIGHT" ],
+        "flag_restriction": ["BATTERY_LIGHT", "BATTERY_ULTRA_LIGHT"],
         "default_magazine": "light_battery_electronoetic"
       }
     ],
-    "armor": [ { "encumbrance": 4, "coverage": 100, "covers": [ "eyes" ] } ],
+    "armor": [{ "encumbrance": 4, "coverage": 100, "covers": ["eyes"] }],
     "material_thickness": 1,
     "environmental_protection": 1,
-    "flags": [ "OUTER", "FRAGILE", "SUN_GLASSES", "WATER_BREAK", "PADDED", "ELECTRONIC" ],
+    "flags": [
+      "OUTER",
+      "FRAGILE",
+      "SUN_GLASSES",
+      "WATER_BREAK",
+      "PADDED",
+      "ELECTRONIC"
+    ],
     "relic_data": {
       "passive_effects": [
         {
@@ -82,7 +132,14 @@
             {
               "condition": { "test_eoc": "EOC_CONDITION_HAS_MIND" },
               "distance": 20,
-              "descriptions": [ { "id": "moving_creature", "symbol": "?", "color": "c_white", "text": "You sense something moving here." } ]
+              "descriptions": [
+                {
+                  "id": "moving_creature",
+                  "symbol": "?",
+                  "color": "c_white",
+                  "text": "You sense something moving here."
+                }
+              ]
             }
           ]
         }
@@ -91,10 +148,14 @@
   },
   {
     "id": "psionic_mindsight_glasses_on",
-    "type": "TOOL_ARMOR",
+    "type": "ITEM",
+    "subtypes": ["TOOL", "ARMOR"],
     "category": "clothing",
     "copy-from": "psionic_mindsight_glasses",
-    "name": { "str": "QD944-P 'Mindsight' glasses (on)", "str_pl": "sets of QD944-P 'Mindsight' glasses (on)" },
+    "name": {
+      "str": "QD944-P 'Mindsight' glasses (on)",
+      "str_pl": "sets of QD944-P 'Mindsight' glasses (on)"
+    },
     "description": "A set of AR-looking glasses.  The code \"QD944-P\" is printed in small letters on the temples.  They are currently active.",
     "use_action": {
       "ammo_scale": 0,

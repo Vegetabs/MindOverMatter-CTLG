@@ -1,6 +1,6 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_postit_psi",
     "category": "books",
     "symbol": ",",
@@ -10,14 +10,14 @@
     "description": "A bright yellow post-it note.",
     "price": "0 cent",
     "price_postapoc": "0 cent",
-    "material": [ "paper" ],
-    "flags": [ "TRADER_AVOID" ],
+    "material": ["paper"],
+    "flags": ["TRADER_AVOID"],
     "weight": "12 mg",
     "volume": "1 ml",
     "copy-from": "lab_postit_bio"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_private_correspondence",
     "name": { "str": "private note" },
     "category": "books",
@@ -27,15 +27,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "6 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_biokinesis_item",
-    "name": { "str": "report (BURNT NOVEMBER)", "str_pl": "copies of report (BURNT NOVEMBER)" },
+    "name": {
+      "str": "report (BURNT NOVEMBER)",
+      "str_pl": "copies of report (BURNT NOVEMBER)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"BURNT NOVEMBER\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_biokinesis",
@@ -43,15 +46,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_clairsentience_item",
-    "name": { "str": "report (NOBLE HORIZON)", "str_pl": "copies of report (NOBLE HORIZON)" },
+    "name": {
+      "str": "report (NOBLE HORIZON)",
+      "str_pl": "copies of report (NOBLE HORIZON)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"NOBLE HORIZON\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_clairsentience",
@@ -59,15 +65,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_electrokinesis_item",
-    "name": { "str": "report (RUBY LOOP)", "str_pl": "copies of report (RUBY LOOP)" },
+    "name": {
+      "str": "report (RUBY LOOP)",
+      "str_pl": "copies of report (RUBY LOOP)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"RUBY LOOP\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_electrokinesis",
@@ -75,15 +84,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_photokinesis_item",
-    "name": { "str": "report (CRYPTIC FORGE)", "str_pl": "copies of report (CRYPTIC FORGE)" },
+    "name": {
+      "str": "report (CRYPTIC FORGE)",
+      "str_pl": "copies of report (CRYPTIC FORGE)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"CRYPTIC FORGE\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_photokinesis",
@@ -91,15 +103,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_pyrokinesis_item",
-    "name": { "str": "report (COPPER PRIME)", "str_pl": "copies of report (COPPER PRIME)" },
+    "name": {
+      "str": "report (COPPER PRIME)",
+      "str_pl": "copies of report (COPPER PRIME)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"COPPER PRIME\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_pyrokinesis",
@@ -107,15 +122,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_telekinesis_item",
-    "name": { "str": "report (JUNIPER GOLD)", "str_pl": "copies of report (JUNIPER GOLD)" },
+    "name": {
+      "str": "report (JUNIPER GOLD)",
+      "str_pl": "copies of report (JUNIPER GOLD)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"JUNIPER GOLD\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_telekinesis",
@@ -123,15 +141,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_telepathy_item",
-    "name": { "str": "report (GRAY DAWN)", "str_pl": "copies of report (GRAY DAWN)" },
+    "name": {
+      "str": "report (GRAY DAWN)",
+      "str_pl": "copies of report (GRAY DAWN)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"GRAY DAWN\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_telepathy",
@@ -139,15 +160,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_teleportation_item",
-    "name": { "str": "report (LOST RAIN)", "str_pl": "copies of report (LOST RAIN)" },
+    "name": {
+      "str": "report (LOST RAIN)",
+      "str_pl": "copies of report (LOST RAIN)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"LOST RAIN\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_teleportation",
@@ -155,15 +179,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_vitakinesis_item",
-    "name": { "str": "report (SMOKE USHER)", "str_pl": "copies of report (SMOKE USHER)" },
+    "name": {
+      "str": "report (SMOKE USHER)",
+      "str_pl": "copies of report (SMOKE USHER)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with the heading \"SMOKE USHER\".  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_vitakinesis",
@@ -171,15 +198,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_matrix_research_item",
-    "name": { "str": "report (matrix technology)", "str_pl": "copies of report (matrix technology)" },
+    "name": {
+      "str": "report (matrix technology)",
+      "str_pl": "copies of report (matrix technology)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports.  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_matrix_research",
@@ -187,15 +217,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_OS647_P_item",
-    "name": { "str": "OS647-P Proposal Response", "str_pl": "copies of OS647-P Proposal Response" },
+    "name": {
+      "str": "OS647-P Proposal Response",
+      "str_pl": "copies of OS647-P Proposal Response"
+    },
     "category": "books",
     "description": "A note written on official XEDRA letterhead.",
     "snippet_category": "lab_file_OS647_P",
@@ -203,15 +236,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_QD944_P_item",
-    "name": { "str": "QD944-P Progress Update", "str_pl": "copies of QD944-P Progress Update" },
+    "name": {
+      "str": "QD944-P Progress Update",
+      "str_pl": "copies of QD944-P Progress Update"
+    },
     "category": "books",
     "description": "A note written on official XEDRA letterhead.",
     "snippet_category": "lab_file_QD944_P",
@@ -219,13 +255,13 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_IG882_P_item",
     "name": { "str": "IG882-P Report", "str_pl": "copies of IG882-P Report" },
     "category": "books",
@@ -235,15 +271,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_phavian_memo_item",
-    "name": { "str": "Project PHAVIAN memo", "str_pl": "copies of Project PHAVIAN memo" },
+    "name": {
+      "str": "Project PHAVIAN memo",
+      "str_pl": "copies of Project PHAVIAN memo"
+    },
     "category": "books",
     "description": "A note written on official XEDRA letterhead.",
     "snippet_category": "lab_file_phavian_memo",
@@ -251,15 +290,18 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "lab_file_obsidian_ring_item",
-    "name": { "str": "report (OBSIDIAN RING)", "str_pl": "copies of report (OBSIDIAN RING)" },
+    "name": {
+      "str": "report (OBSIDIAN RING)",
+      "str_pl": "copies of report (OBSIDIAN RING)"
+    },
     "category": "books",
     "description": "A folder full of what appear to be transcripts of experimental results or reports, with a large \"Project OBSIDIAN RING\" on the front.  Most of it is rather trivial, but certain passages catch your eye…",
     "snippet_category": "lab_file_obsidian_ring",
@@ -267,13 +309,13 @@
     "to_hit": -3,
     "color": "white",
     "symbol": ",",
-    "material": [ "paper" ],
+    "material": ["paper"],
     "volume": "50 ml",
-    "flags": [ "TRADER_AVOID" ],
+    "flags": ["TRADER_AVOID"],
     "copy-from": "file"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "id_science_visitor_phavian",
     "symbol": ",",
     "color": "red",
@@ -281,9 +323,9 @@
     "copy-from": "card_plastic_abstract",
     "description": "A visitor's pass to some sort of facility.  The reverse side describes the protocol for using it; this could grant one-time access at a card reader, if you can find one.  It also lists the addresses of nearby facilities; activate it to add their locations to your map.  There is a prominent symbol stamped on it with the word \"PHAVIAN\" underneath.",
     "price": "600 USD",
-    "flags": [ "CREDIT_CARD_SHAPED", "SCIENCE_CARD_VISITOR" ],
+    "flags": ["CREDIT_CARD_SHAPED", "SCIENCE_CARD_VISITOR"],
     "price_postapoc": "2 USD 50 cent",
-    "material": [ "plastic" ],
+    "material": ["plastic"],
     "weight": "5 g",
     "volume": "5 ml",
     "longest_side": "84 mm",
