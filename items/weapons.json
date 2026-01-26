@@ -281,7 +281,7 @@
       "NO_REPAIR",
       "OVERHEATS"
     ],
-    "faults": ["fault_overheat_explosion", "fault_overheat_melting"],
+    "faults": [{ "fault": "fault_overheat_explosion" }, { "fault": "fault_overheat_melting" }],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE",
