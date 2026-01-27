@@ -2,7 +2,7 @@
   {
     "id": "psionic_anchoring_crown",
     "type": "ITEM",
-    "subtypes": ["ARMOR"],
+    "subtypes": ["ARMOR", "ARTIFACT"],
     "name": { "str": "anchoring crown" },
     "description": "A thin steel circlet studded with chunks of matrix crystal.  Your skin prickles slightly where the crown touches it.",
     "weight": "80 g",
@@ -18,15 +18,13 @@
     "color": "blue",
     "material_thickness": 1,
     "flags": ["DIMENSIONAL_ANCHOR", "PADDED"],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": ["ANCHORCROWN_NOSPELL"]
-        }
-      ]
-    },
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "mutations": ["ANCHORCROWN_NOSPELL"]
+      }
+    ],
     "armor": [
       {
         "encumbrance": 1,
@@ -39,7 +37,7 @@
   {
     "id": "psionic_telepathic_dampener",
     "type": "ITEM",
-    "subtypes": ["ARMOR"],
+    "subtypes": ["ARMOR", "ARTIFACT"],
     "name": { "str": "telepathic dampener" },
     "description": "A steel skullcap with a matrix crystal at its crown.  It looks ridiculous, but the documents you read said it would protect you from telepathic attack.",
     "weight": "767 g",
@@ -54,15 +52,13 @@
     "symbol": "[",
     "color": "white",
     "material_thickness": 0.33,
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ALWAYS",
-          "mutations": ["TELEPATHICDAMPENER_SHIELD"]
-        }
-      ]
-    },
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "mutations": ["TELEPATHICDAMPENER_SHIELD"]
+      }
+    ],
     "armor": [
       {
         "encumbrance": 4,
@@ -76,7 +72,7 @@
   {
     "id": "psionic_mindsight_glasses",
     "type": "ITEM",
-    "subtypes": ["TOOL", "ARMOR"],
+    "subtypes": ["TOOL", "ARMOR", "ARTIFACT"],
     "category": "clothing",
     "looks_like": "ar_glasses_advanced",
     "name": {
@@ -123,28 +119,26 @@
       "PADDED",
       "ELECTRONIC"
     ],
-    "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WORN",
-          "condition": "ACTIVE",
-          "special_vision": [
-            {
-              "condition": { "test_eoc": "EOC_CONDITION_HAS_MIND" },
-              "distance": 20,
-              "descriptions": [
-                {
-                  "id": "moving_creature",
-                  "symbol": "?",
-                  "color": "c_white",
-                  "text": "You sense something moving here."
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "special_vision": [
+          {
+            "condition": { "test_eoc": "EOC_CONDITION_HAS_MIND" },
+            "distance": 20,
+            "descriptions": [
+              {
+                "id": "moving_creature",
+                "symbol": "?",
+                "color": "c_white",
+                "text": "You sense something moving here."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "psionic_mindsight_glasses_on",
