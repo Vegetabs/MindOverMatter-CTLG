@@ -235,7 +235,7 @@
     "id": "mom_pulse_rifle",
     "looks_like": "ar15",
     "type": "ITEM",
-    "subtypes": ["GUN","ARTIFACT"],
+    "subtypes": ["GUN", "ARTIFACT"],
     "reload_noise_volume": 10,
     "name": { "str": "LV429 Pulse Rifle" },
     "description": "The LV429 fires a series of extremely short high-energy laser pulses, more like bullets than a traditional laser beam, greatly reducing dwell time and increasing weapon effectiveness.  Matrix crystal technology has made the weapon compact enough to be man-portable and provided it with enough power for essentially unlimited combat operations, but heat dissipation is still a problem, preventing it from being fired more than once every few seconds.",
@@ -281,7 +281,10 @@
       "NO_REPAIR",
       "OVERHEATS"
     ],
-    "faults": [{ "fault": "fault_overheat_explosion" }, { "fault": "fault_overheat_melting" }],
+    "faults": [
+      { "fault": "fault_overheat_explosion" },
+      { "fault": "fault_overheat_melting" }
+    ],
     "pocket_data": [
       {
         "pocket_type": "MAGAZINE",
@@ -299,7 +302,7 @@
     "id": "mom_pulse_rifle_prototype",
     "looks_like": "ar15",
     "type": "ITEM",
-    "subtypes": ["GUN","ARTIFACT"],
+    "subtypes": ["GUN", "ARTIFACT"],
     "copy-from": "mom_pulse_rifle",
     "name": { "str": "LV429-P Pulse Rifle" },
     "description": "The LV429 fires a series of extremely short high-energy laser pulses, more like bullets than a traditional laser beam, greatly reducing dwell time and increasing weapon effectiveness.  Matrix crystal technology has made the weapon compact enough to be man-portable and provided it with enough power for essentially unlimited operation.  This is a prototype, obvious from the bright red coloration of the barrel and grip, as well as the word \"prototype\" written in large letters on the stock and the flammable symbol next to it.",
