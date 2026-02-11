@@ -36,13 +36,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_biokin_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_biokin_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -71,13 +70,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_clair_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_clair_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -106,13 +104,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_electrokin_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_electrokin_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -141,13 +138,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_photokin_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_photokin_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -176,13 +172,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_pyrokin_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_pyrokin_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -211,13 +206,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_telekin_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_telekin_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -246,13 +240,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_telepath_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_telepath_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -281,13 +274,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_teleport_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_teleport_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -316,13 +308,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_vitakin_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_vitakin_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   },
   {
@@ -351,13 +342,12 @@
     "time": "1 h",
     "book_learn": [ [ "schematics_matrix_crystal_ground", 5 ], [ "recipe_survivor_matrix_crystal_ground", 7 ] ],
     "qualities": [ { "id": "FINE_GRIND", "level": 1 }, { "id": "BOIL", "level": 1 } ],
-    "tools": [ [ [ "microscope", -1 ] ] ],
+    "tools": [ [ [ "microscope", -1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
     "proficiencies": [
       { "proficiency": "prof_intro_chemistry", "required": false },
       { "proficiency": "prof_inorganic_chemistry", "required": false }
     ],
-    "using": [ [ "any_strong_acid", 2, "LIST" ], [ "surface_heat", 30, "LIST" ] ],
-    "components": [ [ [ "matrix_crystal_drained_dust", 3 ] ] ],
+    "components": [ [ [ "matrix_crystal_drained_dust", 3 ] ], [ [ "any_strong_acid", 2, "LIST" ] ] ],
     "flags": [ "SECRET", "BLIND_HARD" ]
   }
 ]
