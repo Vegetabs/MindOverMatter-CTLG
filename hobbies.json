@@ -6,6 +6,7 @@
     "name": "Meditation",
     "description": "You make a habit of clearing your thoughts and finding your center, even amidst the chaos of the world.",
     "points": 4,
+    "traits": [ "OPTIMISTIC", "SPIRITUAL" ],
     "skills": [ { "level": 3, "name": "metaphysics" } ]
   },
   {
