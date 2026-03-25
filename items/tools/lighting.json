@@ -54,8 +54,8 @@
       "target": "pyrokinetic_flashlight",
       "ammo_scale": 0
     },
+    "light": 225,
     "flags": [
-      "LIGHT_225",
       "CHARGEDIM",
       "TRADER_AVOID",
       "BELT_CLIP",
@@ -116,8 +116,8 @@
       "msg": "You close the lamp's cover.",
       "menu_text": "Close cover"
     },
+    "light": 150,
     "flags": [
-      "LIGHT_150",
       "LEAK_DAM",
       "ALLOWS_REMOTE_USE",
       "CHARGEDIM",

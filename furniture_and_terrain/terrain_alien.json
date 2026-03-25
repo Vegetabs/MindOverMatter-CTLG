@@ -126,7 +126,7 @@
     "color": "magenta",
     "light_emitted": 10,
     "transforms_into": "t_tree_small_alien_1_harvested",
-    "examine_action": "harvest_ter_nectar",
+    "examine_action": "harvest_furn",
     "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn", "winter" ], "id": "alien_tree_harv" } ],
     "move_cost": 0,
     "coverage": 80,
