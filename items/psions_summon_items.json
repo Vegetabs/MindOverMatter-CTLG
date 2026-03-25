@@ -308,6 +308,7 @@
     "price_postapoc": "1 cent",
     "symbol": "$",
     "color": "red",
+    "light": 20,
     "flags": [
       "PERSONAL",
       "PADDED",
@@ -316,7 +317,6 @@
       "RESTRICT_HANDS",
       "ZERO_WEIGHT",
       "MUNDANE",
-      "LIGHT_20",
       "FIRE",
       "NO_DROP"
     ],
@@ -367,6 +367,7 @@
     "price_postapoc": "1 cent",
     "symbol": "$",
     "color": "red",
+    "light": 50,
     "flags": [
       "PERSONAL",
       "PADDED",
@@ -374,7 +375,6 @@
       "INTEGRATED",
       "SEMITANGIBLE",
       "ZERO_WEIGHT",
-      "LIGHT_50",
       "FIRE",
       "NO_DROP",
       "NO_UNLOAD",
