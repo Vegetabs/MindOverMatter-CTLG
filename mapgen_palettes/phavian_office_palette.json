@@ -5,7 +5,7 @@
     "terrain": {
       "ꞝ": "t_carpet_linoleum_gray_green",
       ".": "t_linoleum_white",
-      ":": "t_reinforced_glass",
+      ":": "t_laminated_glass",
       "=": "t_door_glass_frosted_lab_c",
       "|": "t_concrete_wall",
       "+": "t_door_c"

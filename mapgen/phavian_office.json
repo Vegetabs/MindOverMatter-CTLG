@@ -171,8 +171,8 @@
         "¥": "t_card_science",
         "=": "t_door_metal_locked",
         "|": "t_concrete_wall",
-        "-": "t_reinforced_door_glass_lab_c",
-        "⁷": "t_reinforced_glass",
+        "-": "t_laminated_door_glass_lab_c",
+        "⁷": "t_laminated_glass",
         "+": "t_door_c",
         "s": "t_soil"
       },
@@ -234,8 +234,8 @@
         "¥": "t_card_science",
         "=": "t_door_metal_locked",
         "|": "t_concrete_wall",
-        "-": "t_reinforced_door_glass_lab_c",
-        "⁷": "t_reinforced_glass",
+        "-": "t_laminated_door_glass_lab_c",
+        "⁷": "t_laminated_glass",
         "s": "t_rock"
       },
       "furniture": { "f": "f_table", "h": "f_chair", "R": "f_bookcase", "F": "f_fridge", "S": "f_sink" },
