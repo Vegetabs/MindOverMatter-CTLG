@@ -36,7 +36,7 @@
       "G": "t_door_glass_frosted_lab_c",
       "R": "t_railing",
       "s": "t_sidewalk",
-      "V": "t_reinforced_glass",
+      "V": "t_laminated_glass",
       "w": "t_window",
       "-": "t_brick_wall",
       "|": "t_brick_wall",
@@ -92,7 +92,7 @@
     "terrain": {
       "ꞝ": "t_carpet_linoleum_gray_green",
       ".": "t_linoleum_white",
-      ":": "t_reinforced_glass",
+      ":": "t_laminated_glass",
       "=": "t_door_glass_frosted_lab_c",
       "|": "t_brick_wall",
       "-": "t_brick_wall",
