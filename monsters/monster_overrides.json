@@ -627,8 +627,8 @@
     "armor": { "bash": 17, "cut": 22, "bullet": 18, "electric": 4, "psi_telepathic_damage": 70 }
   },
   {
-    "id": "mon_mi_go_slaver",
-    "copy-from": "mon_mi_go_slaver",
+    "id": "mon_mi_go_abductor",
+    "copy-from": "mon_mi_go_abductor",
     "type": "MONSTER",
     "armor": { "bash": 4, "cut": 12, "bullet": 10, "electric": 3, "psi_telepathic_damage": 35 }
   },
