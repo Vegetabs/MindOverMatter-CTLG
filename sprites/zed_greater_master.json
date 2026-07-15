@@ -1,0 +1,18 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MshockXottoplus" ],
+    "tiles-new": [
+      {
+        "file": "sprites/zed_greater_master.png",
+        "sprite_width": 32,
+        "sprite_height": 48,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -16,
+        "tiles": [
+          { "id": "mon_zombie_greater_master", "fg": 1 }
+        ]
+      }
+    ]
+  }
+]
