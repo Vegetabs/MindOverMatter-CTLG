@@ -295,7 +295,7 @@
     "id": "pigeon_aura",
     "name": [ "" ],
     "blood_analysis_description": "Blood sample contains noetic steroid particles and pigeon dander.",
-    "base_mods": { "str_mod": [ 1 ], "stim_amount": [ 1 ], "stim_tick": [ 500 ], "stim_max_val": [ 10 ] }
+    "base_mods": { "str_mod": [ 1 ] }
   },
   {
     "type": "effect_type",
