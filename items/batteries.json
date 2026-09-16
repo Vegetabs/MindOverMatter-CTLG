@@ -15,7 +15,7 @@
     "price": "31 cent",
     "price_postapoc": "2 USD",
     "material": [
-      { "type": "budget_steel", "portion": 90 },
+      { "type": "steel", "portion": 90 },
       { "type": "nether_crystal", "portion": 9 },
       { "type": "plastic", "portion": 1 }
     ],
@@ -70,7 +70,7 @@
     "price": "101 cent",
     "price_postapoc": "5 USD",
     "material": [
-      { "type": "budget_steel", "portion": 90 },
+      { "type": "steel", "portion": 90 },
       { "type": "nether_crystal", "portion": 9 },
       { "type": "plastic", "portion": 1 }
     ],
@@ -126,7 +126,7 @@
     "price": "22 USD",
     "price_postapoc": "35 cent",
     "material": [
-      { "type": "budget_steel", "portion": 90 },
+      { "type": "steel", "portion": 90 },
       { "type": "nether_crystal", "portion": 9 },
       { "type": "plastic", "portion": 1 }
     ],
