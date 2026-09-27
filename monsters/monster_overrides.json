@@ -60,18 +60,6 @@
     "regeneration_modifiers": [ [ "effect_vitakin_hurt", -2 ] ]
   },
   {
-    "id": "mon_zombie_medical_pupa",
-    "copy-from": "mon_zombie_medical_pupa",
-    "type": "MONSTER",
-    "regeneration_modifiers": [ [ "effect_vitakin_hurt", -5 ] ]
-  },
-  {
-    "id": "mon_zombie_pupa_medical_decoy",
-    "copy-from": "mon_zombie_pupa_medical_decoy",
-    "type": "MONSTER",
-    "regeneration_modifiers": [ [ "effect_vitakin_hurt", -5 ] ]
-  },
-  {
     "id": "mon_mutant_evolved",
     "copy-from": "mon_mutant_evolved",
     "type": "MONSTER",
@@ -99,12 +87,6 @@
   {
     "id": "mon_zombie_regenerating",
     "copy-from": "mon_zombie_regenerating",
-    "type": "MONSTER",
-    "regeneration_modifiers": [ [ "effect_vitakin_hurt", -6 ] ]
-  },
-  {
-    "id": "mon_zombie_medical_regenerating",
-    "copy-from": "mon_zombie_medical_regenerating",
     "type": "MONSTER",
     "regeneration_modifiers": [ [ "effect_vitakin_hurt", -6 ] ]
   },
